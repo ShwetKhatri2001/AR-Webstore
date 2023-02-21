@@ -12,15 +12,6 @@ canvas {
 
 /* Overriding default AR button styles to make it look better on a white background */
 #ARButton {
-  color: white;
-  background-color: black;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  padding: 8px 15px;
-  margin: 5px;
-  white-space: nowrap;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
+  border: 1px solid black !important;
+  color: black !important;
 }
