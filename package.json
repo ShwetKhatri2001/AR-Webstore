@@ -29,6 +29,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "qrcode": "^1.5.1",
     "three": "^0.138.3"
   }
 }

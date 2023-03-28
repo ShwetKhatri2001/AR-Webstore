@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "ar",
     "ignore": [
       "firebase.json",
       "**/.*",

@@ -7,7 +7,7 @@ const TerserWebpackPlugin = require("terser-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: {
-    index: "./src/index.ts",
+    ar: "./src/index.ts",
   },
   module: {
     rules: [
@@ -44,8 +44,8 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "ar"),
     clean: true,
   },
   devServer: {
