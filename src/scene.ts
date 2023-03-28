@@ -13,7 +13,7 @@ import {
   XRFrame,
 } from "three";
 
-export function createScene(renderer: WebGLRenderer) {
+export function createScene(renderer: WebGLRenderer,assetpath: string | null ) {
   const scene = new Scene();
 
   const camera = new PerspectiveCamera(
@@ -35,9 +35,11 @@ export function createScene(renderer: WebGLRenderer) {
   const gltfLoader = new GLTFLoader();
 
   let chairModel: Object3D;
-
   /** To show Chair */
-  gltfLoader.load("../assets/models/SheenChair.glb", (gltf: GLTF) => {
+  if(assetpath === null){
+    assetpath = "../assets/models/SheenChair.glb"
+  }
+  gltfLoader.load(assetpath, (gltf: GLTF) => {
     chairModel = gltf.scene;
   });
 

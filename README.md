@@ -4,9 +4,13 @@
 - Its a web application to visualize photorealistic 3D chairs by placing them in AR ( Augmented Reality ).
 
 ## 👀 Preview
-
+ Auther
 ### [Live Link](https://ar-chairs.netlify.app/)
 
+Project Console: 
+<!-- ### [console Link](https://console.firebase.google.com/project/archairdemo/overview) -->
+Hosting URL:
+### [web Link]( https://archairdemo.web.app)
 <div style="display:flex;">
   <img src="https://user-images.githubusercontent.com/56475750/220354002-de05a051-8cf1-41ea-9a40-fe84d37fae5b.jpeg" 
             alt="before" width="300"/>

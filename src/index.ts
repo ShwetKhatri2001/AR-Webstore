@@ -6,6 +6,7 @@ import {
   browserHasImmersiveArCompatibility,
   displayIntroductionMessage,
   displayUnsupportedBrowserMessage,
+  getCurrentURL,getCurrentURLVarAstpth
 } from "./utils/domUtils";
 
 import "./styles.css";
@@ -35,7 +36,8 @@ function initializeXRApp() {
   );
 
   // Passing the renderer to the createScene-funtion.
-  createScene(renderer);
+  let astpth=getCurrentURLVarAstpth();
+  createScene(renderer,astpth);
 
   // Displaying a welcome message to the user.
   displayIntroductionMessage();
@@ -48,5 +50,6 @@ async function start() {
   // Then Initializing app if supported.
   immersiveArSupported ? initializeXRApp() : displayUnsupportedBrowserMessage();
 }
-
+console.log(getCurrentURLVarAstpth())
+console.log(getCurrentURL())
 start();

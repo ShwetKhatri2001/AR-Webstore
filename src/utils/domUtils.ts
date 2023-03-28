@@ -1,7 +1,30 @@
-/*
+const qr = require("qrcode");
+let base64="";
+let imgpth="";
+const url = getCurrentURL();
+const urlvar = getCurrentURLVarAstpth();
+
+    let stJson =JSON.stringify(url);
+    let stJson2 =JSON.stringify(urlvar);
+
+    qr.toDataURL(stJson,{type:'terminal'},function(err: { message: any; },code: string){
+      if(err) return console.log(err.message);
+      base64 = code;
+      // console.log(base64);
+    });
+
+    /*
  * Returns true if navigator has xr with 'immersive-ar' capabilities
  * Returns false otherwise.
  */
+export function getCurrentURL () {
+  return window.location.href
+}
+export function getCurrentURLVarAstpth () {
+  const urlParams = new URLSearchParams(window.location.search);
+  let imgpth = urlParams.get('assetpath');
+  return imgpth
+}
 export async function browserHasImmersiveArCompatibility(): Promise<boolean> {
   if (window.navigator.xr) {
     const isSupported: boolean = await navigator.xr.isSessionSupported(
@@ -25,7 +48,7 @@ export async function browserHasImmersiveArCompatibility(): Promise<boolean> {
 export function displayUnsupportedBrowserMessage(): void {
   const appRoot: HTMLElement | null = document.getElementById("app-root");
   const bigMessage: HTMLParagraphElement = document.createElement("p");
-
+  const imgqrdisp: HTMLImageElement | null  = document.createElement("img");
   bigMessage.innerText = "😢 Oh no!";
   if (appRoot) {
     appRoot.appendChild(bigMessage);
@@ -34,18 +57,23 @@ export function displayUnsupportedBrowserMessage(): void {
   const middleMessage: HTMLParagraphElement = document.createElement("p");
   middleMessage.innerText =
     "Your browser does not seem to support augmented reality with WebXR.";
-
+   
   if (appRoot) {
     appRoot.appendChild(middleMessage);
   }
 
   const helpMessage: HTMLParagraphElement = document.createElement("p");
 
+    
   helpMessage.innerText =
-    "Try opening the page using a recent version of Chrome on Android.";
-
+    `Try opening the page using a recent version of Chrome on Android.${url} asset is from ${urlvar} = ${stJson2}`;
+    
   if (appRoot) {
     appRoot.appendChild(helpMessage);
+  }
+  imgqrdisp.src=base64;
+  if(appRoot){
+    appRoot.appendChild(imgqrdisp);
   }
 }
 
@@ -60,7 +88,7 @@ export function displayIntroductionMessage() {
   bigMessage.innerText = "Welcome 👋 Have a seat buddy";
 
   const descMessage: HTMLParagraphElement = document.createElement("h4");
-  descMessage.innerText = "Enjoy the AR experience built by Shwet Khatri";
+  descMessage.innerText = "Enjoy the AR experience";
 
   const middleMessage: HTMLParagraphElement = document.createElement("p");
   middleMessage.innerText =
@@ -104,4 +132,5 @@ export default {
   browserHasImmersiveArCompatibility,
   displayIntroductionMessage,
   displayUnsupportedBrowserMessage,
+  getCurrentURL,getCurrentURLVarAstpth
 };
