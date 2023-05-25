@@ -3,4 +3,4 @@ updates:
   - package-ecosystem: "npm"  # Replace with your package manager
     directory: "/"  # Replace with the directory to monitor
     schedule:
-      interval: "daily"  # Update frequency (daily, weekly, or monthly)
+      interval: "weekely"  # Update frequency (daily, weekly, or monthly)
