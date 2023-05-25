@@ -50,6 +50,12 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
 - Webpack
 - HTML and CSS
 
+![three.js](https://img.shields.io/badge/three.js-ff3300.svg?style=for-the-badge&logo=three.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![webpack](https://img.shields.io/badge/Webpack-9900cc.svg?style=for-the-badge&logo=Webpack&logoColor=white)
+![Html](https://img.shields.io/badge/html-000000.svg?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/CSS-ffff00.svg?style=for-the-badge&logo=css3&logoColor=black)
+
 ## 🔥 Setting and Running the app locally
 
 1. Fork the Repo
