@@ -46,6 +46,7 @@ Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating
             alt="after" width="300"/>
 </div>
 <a name="goals"></a>
+
 # 🤩 Future Goals
 
 - Build an ecommerse platform which can provide an immersive online shopping experience.
@@ -62,12 +63,8 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
 - [Develop your first WebAR app using WebXR and Three.js](https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92)
 - [WebXR Workshop](https://www.youtube.com/watch?v=gAzIkjkJSzM)
 <a name="tech"></a>
-## 🧰 Technologies Used
 
-- Three.js
-- Typescript
-- Webpack
-- HTML and CSS
+## 🧰 Technologies Used
 
 ![three.js](https://img.shields.io/badge/three.js-000000.svg?style=for-the-badge&logo=three.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -75,14 +72,13 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS5](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-=======
 <a name="setup"></a>
 ## 🔥 Setting and Running the app locally
 
 1. Fork the Repo
    - Firstly you have to make your own copy of the project. For that, You have to fork the repository. You can find the fork button on the top-right side of the browser window. (Refer to the image below )
    - Kindly wait till it gets forked.
-   - After that copy will look like `your-user-name/AR-Webstore` forked from `ShwetKhatri2001/AR-Webstore`
+   - After that copy will look like `<your-user-name>/AR-Webstore` forked from `ShwetKhatri2001/AR-Webstore`
   
 2. Clone the Repo to your system
     - Now you have your own copy of the project. Here you have to start your work.
@@ -126,12 +122,12 @@ As the app is running on a mobile device, you won't be able to easily access the
 
 <table style="width:100%;background-color:white;border-radius:30px;">
     <tr>
-  <td>
-<center>
-  <a href="https://gssoc.girlscript.tech/"><img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/a9f04517-1e99-4d6c-be13-05f02387fe7e"></img></a>
-  </center>
-  </td>
-  </tr>
+     <td>
+      <center>
+        <a href="https://gssoc.girlscript.tech/"><img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/a9f04517-1e99-4d6c-be13-05f02387fe7e"></img></a>
+      </center>
+     </td>
+   </tr>
 </table>
 
 <a name="project-admin"></a>
@@ -152,13 +148,8 @@ Looking for some mentors who can help me maintain the project workflow.
 
 ### Credits goes to these people:
 
-<table>
-<tr>
-<td>
 <a href="https://github.com/ShwetKhatri2001/AR-Webstore/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=ShwetKhatri2001/AR-Webstore" />
+   <img src="https://contrib.rocks/image?repo=ShwetKhatri2001/AR-Webstore" />
 </a>
-</td>
-</tr>
-</table>
+
 
