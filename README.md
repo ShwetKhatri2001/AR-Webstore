@@ -27,11 +27,11 @@
 Traditional ecommerce platforms fail to deliver immersive product experiences, leaving customers uncertain about the look, fit, and functionality of items. This lack of visualization leads to higher return rates as products may not meet expectations. Additionally, customer engagement suffers due to the limited ability to interact with and explore products online.
 
   ### Solution 😃
-Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating augmented reality. With AR-Webstore Customers can visualize products in their own spaces, and view all the virtual features more clearly. This empowers customers to make informed decisions, reduces return rates, and enhances engagement, resulting in a more satisfying and immersive shopping journey.
+Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating augmented reality. With AR-Webstore Customers can visualize products in their own spaces, and view all the virtual features clearly. This empowers customers to make informed decisions, reduces return rates, and enhances engagement, resulting in a more satisfying and immersive shopping journey.
 
 <a id="current"></a>
 ## Current State of Project
-- It showcases a 3d photorealistic model of a chair in your own environment using augmented reality, where you can check each and every detail about the chair as if its actually present in your room.
+- It showcases a 3d photorealistic model of a chair in your own environment using augmented reality, where you can check each and every detail about the chair as if it's actually present in your room.
 </div>
 <a name="preview"></a>
 
@@ -49,7 +49,7 @@ Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating
 
 # 🤩 Future Goals
 
-- Build an ecommerse platform which can provide an immersive online shopping experience.
+- Build an ecommerce platform which can provide an immersive online shopping experience.
 - Make the products interactive in real-environment rather than just demonstrating static 3d models using ML-AI
 
 # 😇 Learning Exposure
