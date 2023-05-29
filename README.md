@@ -49,7 +49,7 @@ Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating
 
 # 🤩 Future Goals
 
-- Build an ecommerse platform which can provide an immersive online shopping experience.
+- Build an ecommerce platform which can provide an immersive online shopping experience.
 - Make the products interactive in real-environment rather than just demonstrating static 3d models using ML-AI
 
 # 😇 Learning Exposure
