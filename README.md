@@ -49,12 +49,12 @@ Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating
 
 # 🤩 Future Goals
 
-- Build an ecommerse platform which can provide an immersive online shopping experience.
-- Make the products interactive in real-environment rather than just demonstrating static 3d models using ML-AI
+- Build an ecommerce platform which can provide an immersive online shopping experience.
+- Make the products interactive in a real environment rather than just demonstrating static 3d models using ML-AI
 
 # 😇 Learning Exposure
 
-XR, or Extended Reality, is an exciting technology that combines the real world with virtual elements. As a student interested in XR, while contributing to this project you will learn about the technical aspects of XR which involves understanding about how to create and render virtual objects, recognize and track objects in the real world and explore how users interact with virtual environments, ensuring intuitive and immersive experiences. While studying XR, you can delve into programming technologies like Three.JS or Unity to develop interactive and immersive experiences. You'll also explore 3D modeling and animation to create virtual objects and environments.
+XR, or Extended Reality, is an exciting technology that combines the real world with virtual elements. As a student interested in XR, while contributing to this project you will learn about the technical aspects of XR which involves understanding about how to create and render virtual objects, recognize and track objects in the real world and explore how users interact with virtual environments, ensuring intuitive and immersive experiences. While studying XR, you can delve into programming technologies like Three.js or Unity to develop interactive and immersive experiences. You'll also explore 3D modeling and animation to create virtual objects and environments.
 
 No no ! Don't worry about some top of the world words mentioned above, the project is completely beginner friendly 😅 ! But if you give your best then you can really learn and build something out of the box for the future while working on this project, that I can ensure 😎! Find some helpful resources below to start your journey in XR.
 
@@ -116,7 +116,7 @@ As the app is running on a mobile device, you won't be able to easily access the
 <a name="open-source"></a>
 ## 📌 Opensource Programs
 
-### This project is a part of following Open Source Program
+### This project is a part of the following Open Source Program
 
 <br>
 
