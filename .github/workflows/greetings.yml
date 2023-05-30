@@ -1,21 +1,23 @@
-name: Greetings
-
+name: Greeting
 on:
-  fork:
-  push:
-    branches: [main]
+  pull_request:
+    types: [opened]
   issues:
     types: [opened]
-  pull_request_target:
-    types: [opened]
-
 jobs:
-  welcome:
+  run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: EddieHubCommunity/gh-action-community/src/welcome@main
+      - uses: wow-actions/welcome@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: "Hello ${{ github.actor }}, thanks for opening a issue, your contribution is valuable to us. The maintainers will review this issue and provide feedback as soon as possible."
-          pr-message: "Hello ${{ github.actor }}, thanks for rising a Pull request, your contribution is valuable to us. The maintainers will review this Pull Request and provide feedback as soon as possible. Keep the great work up!"
+          FIRST_ISSUE: |
+            👋 @{{ author }}
+            Thanks for opening a issue, your contribution is valuable to us. The maintainers will review this issue and provide feedback as soon as possible!
+
+          FIRST_PR: |
+            👋 @{{ author }}
+            Thanks for rising a Pull request, your contribution is valuable to us. The maintainers will review this Pull Request and provide feedback as soon as possible. Keep the great work up!
+
+          FIRST_PR_MERGED: |
+            🎉 @{{ author }}
+            Congrats on merging your first pull request! We appreciate your contribution in AR-Webstore!
