@@ -21,14 +21,14 @@ Below you will find the process and workflow used to review and merge your chang
   
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>  
+git clone https://github.com/<your-username>/AR-Webstore
 ```
 
 - Keep a reference to the original project in `upstream` remote.
 
 ```bash  
-cd <repo-name>  
-git remote add upstream https://github.com/<upstream-owner>/<repo-name>
+cd AR-Webstore  
+git remote add upstream https://github.com/ShwetKhatri2001/AR-Webstore
 git remote -v # To the check the remotes for this repository 
 ```  
 
