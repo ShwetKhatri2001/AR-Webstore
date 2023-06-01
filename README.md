@@ -96,7 +96,7 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
     npm install
     ```
     ```
-    npm start:live
+    npm run start:live
     ```
 
     This will install the app dependencies, start an instance of webpack-dev-server and expose the local web server to the internet using. The localtunnel URL will be printed to your terminal.
