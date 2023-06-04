@@ -159,4 +159,6 @@ Looking for some mentors who can help me maintain the project workflow.
    <img src="https://contrib.rocks/image?repo=ShwetKhatri2001/AR-Webstore" />
 </a>
 
+## License
+ This project is licensed under the [MIT License](https://github.com/ShwetKhatri2001/AR-Webstore/blob/master/LICENSE)
 
