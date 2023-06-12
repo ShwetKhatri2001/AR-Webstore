@@ -2,14 +2,14 @@
 
 ![AR-Webstore](https://socialify.git.ci/ShwetKhatri2001/AR-Webstore/image?description=1&descriptionEditable=Webstore%20of%20photorealistic%20%0A3D%20digital%20objects%20in%20AR%20&font=Source%20Code%20Pro&forks=1&issues=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 <p align="center">
-<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-<img src="https://forthebadge.com/images/badges/uses-brains.svg" />
-<img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
- <br>
- <img src="https://img.shields.io/github/repo-size/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues-closed-raw/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+  <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+  <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br>
   <img src="https://img.shields.io/github/issues-pr-closed-raw/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/contributors/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/last-commit/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
  </p>
 
@@ -78,8 +78,8 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
 ## 🧰 Technologies Used
 
 ![three.js](https://img.shields.io/badge/three.js-000000.svg?style=for-the-badge&logo=three.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![webpack](https://img.shields.io/badge/Webpack-1C78C0.svg?style=for-the-badge&logo=Webpack&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/-JavaScript-FE7601?style=for-the-badge&logo=javascript)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS5](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
@@ -102,19 +102,19 @@ No no ! Don't worry about some top of the world words mentioned above, the proje
     ```
     cd AR-Webstore
     ``` 
-3. To get the web app up and running, you need to run the following commands to install dependencies and start the app using [localtunnel](https://github.com/localtunnel/localtunnel).
+3. To get the web app up and running, you need to run the following commands to install dependencies and start the app.
     ```
     npm install
     ```
     ```
-    npm run start:live
+    npm start
     ```
 
     This will install the app dependencies, start an instance of webpack-dev-server and expose the local web server to the internet using. The localtunnel URL will be printed to your terminal.
 <a name="build"></a>
 ## 🧰 Build
 
-Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `npm run build` to build the project. The build artifacts will be stored in the `build/` directory.
 
 ```
 npm run build
@@ -122,7 +122,7 @@ npm run build
 <a name="debug"></a>
 ## 📝 A note on debugging
 
-As the app is running on a mobile device, you won't be able to easily access the devtools directly in the mobile browser. For development and debugging, attach the device to your machine using a cable and access the url `chrome://inspect/#devices` in your desktop version of Chrome. Allow debug access when prompted on your device. You should then be able to see your device appear in the inspection window you opened earlier, where you can use the `inspect` functionality to get access to the running app instance for debugging.
+For development and debugging, attach the device to your machine using a cable and access the url `chrome://inspect/#devices` in your desktop version of Chrome. Allow debug access when prompted on your device. You should then be able to see your device appear in the inspection window you opened earlier, where you can use the `inspect` functionality to get access to the running app instance for debugging.
 
 <a name="open-source"></a>
 ## 📌 Opensource Programs
