@@ -38,7 +38,7 @@ This Code of Conduct applies within all community spaces and also applies when a
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at gmail. All complaints will be reviewed and investigated promptly and fairly.
 
-All community leaders are obligated.
+All community leaders are obligated
 
 ## 🔨 Enforcement Guidelines
 
