@@ -1,6 +1,6 @@
-# AR-Webstore 🚀
+<h1 align="center"># AR-Webstore 🚀</h1>
 
-![AR-Webstore](https://socialify.git.ci/ShwetKhatri2001/AR-Webstore/image?description=1&descriptionEditable=Webstore%20of%20photorealistic%20%0A3D%20digital%20objects%20in%20AR%20&font=Source%20Code%20Pro&forks=1&issues=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
+<div align="center">
 <p align="centre">
   <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
   <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
@@ -11,10 +11,14 @@
   <img src="https://img.shields.io/github/contributors/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/repo-size/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/last-commit/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
- </p>
+ </p></div>
 
-- Hi 👋, Shwet here and welcome to AR-Webstore!
+![AR-Webstore](https://socialify.git.ci/ShwetKhatri2001/AR-Webstore/image?description=1&descriptionEditable=Webstore%20of%20photorealistic%20%0A3D%20digital%20objects%20in%20AR%20&font=Source%20Code%20Pro&forks=1&issues=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
+
+<div align="center">
+- Hi 👋, Shwet here and welcome to AR-Webstore! <br>
 - It's a web application to visualize photorealistic 3D objects in AR (Augmented Reality).
+</div>
 
 ## Table of Contents
 
