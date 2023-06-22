@@ -1,6 +1,33 @@
 # Contributing Guidelines
 
-This documentation contains set of guidelines to help you during the contribution process.
+Thank you for considering contributing to the AR-Webstore Project! We appreciate your interest and support. Kindly take a moment to review the guidelines below to ensure a smooth and efficient contribution process.
+
+# About AR-Webstore
+
+AR has completely revolutionalized the experience of buying products online and made it more convenient for users. Also, it has provided a huge hike in sales for sellers. So, let us build such AR Webstore for e-commerce products where a list of 3D products can be visualized in your own environment ( AR ) and can be ordered smoothly.
+
+## Reporting Bugs and Issues
+
+If you encounter a bug or issue while using this project, we encourage you to report it. While reporting bugs, please provide as much information as possible, including:
+
+    1. Steps to reproduce the issue
+    2. Expected behavior
+    3. Actual behavior
+    4. Any relevant error messages or screenshots
+
+To report a bug or issue, kindly follow these steps:
+
+    1. Go to the issues section of the repository.
+    2. Click on the "New Issue" button.
+    3. Fill in the necessary details following the provided template.
+
+## Code Formatting and Style Guidelines
+
+Consistent code formatting and style are important for maintaining a clean and readable codebase. Please adhere to the following guidelines when submitting code changes: 
+
+    1. Use spaces for indentation.
+    2. Follow the established naming conventions for variables, functions, and classes.
+    3. Write clear and concise comments to explain complex code sections.
 
 # Submitting Contributions👨🏻‍💻
 Below you will find the process and workflow used to review and merge your changes.
@@ -86,6 +113,11 @@ git push origin branch_name
 If no changes are needed, this means that your Pull Request has been reviewed and will be merged to the original code base by the maintainer.
 
 - Note : Always add screenshots to help the maintainer know what this enhancement/implementation is all about.
+
+
+## Conclusion
+
+By following these contribution guidelines, you can actively contribute to the AR- Webstore project and help us improve our services. Thank you for your dedication and support!
 
 ### Need more help?
 
