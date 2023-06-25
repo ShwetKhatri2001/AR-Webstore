@@ -1,6 +1,23 @@
 # Contributing Guidelines
+Thank you for considering contributing to this project! We appreciate your interest and support. This documentation contains set of guidelines to help you during the contribution process. Please take a moment to review this information before submitting any contributions.
 
-This documentation contains set of guidelines to help you during the contribution process.
+## Reporting Bugs and Issues 
+If you encounter a bug or issue while using this project, we encourage you to report it. While reporting bugs, please provide as much information as possible, including:
+    1. Steps to reproduce the issue.
+    2. Expected behavior
+    3. Actual behavior
+    4. Any relevant error messages or screenshots
+
+To report a bug or issue, please follow these steps:
+    1. Go to the issues section of the repository.
+    2. Click on the "New Issue" button.
+    3. Fill in the necessary details, following the provided template.
+
+## Code Formatting and Style Guidelines
+Consistent code formatting and style are important for maintaining a clean and readable codebase. Please adhere to the following guidelines when submitting code changes:
+    1. Use spaces for indentation.
+    2. Follow the established naming conventions for variables, functions and classes.
+    3. Write clear and concise comments to explain complex code sections.
 
 # Submitting Contributions👨🏻‍💻
 Below you will find the process and workflow used to review and merge your changes.
@@ -11,11 +28,9 @@ Below you will find the process and workflow used to review and merge your chang
 - Wait for the issue to be assigned to you after which you can start working on it.
 
 ## Step 2 : Fork the repository
-
 - Fork this repository by clicking on the "Fork" button. This will create a local copy of this respository on your GitHub profile.
 
 ## Step 3 : Clone the forked repository
-
 - Once the repository is forked you need to clone it to your local machine.
 - Click on the "Code" button in the repository page and copy the link provided in the dropdown menu.
   
@@ -86,6 +101,9 @@ git push origin branch_name
 If no changes are needed, this means that your Pull Request has been reviewed and will be merged to the original code base by the maintainer.
 
 - Note : Always add screenshots to help the maintainer know what this enhancement/implementation is all about.
+
+By following these guidelines, we aim to create a welcoming community where everyone feels comfortable and empowered to contribute.
+Thank you for interest and support! 
 
 ### Need more help?
 
