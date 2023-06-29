@@ -11,7 +11,7 @@ ReactDOM.render(
   <BrowserRouter>
   <Routes>
   <Route Component={App} path="/" />
-  <Route Component={ErrorPage} path="/*" />
+  <Route Component={ErrorPage} path="*" />
   </Routes>
   </BrowserRouter>,
   document.getElementById('root')
