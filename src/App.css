@@ -32,3 +32,49 @@
 .arbutton:focus-visible {
   outline: 1px solid #4285f4;
 }
+
+.user-login
+{
+    z-index: 998;
+    position: fixed;
+    top: 0;left: 0;
+    height:100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(74, 74, 74, 0.9);
+align-items: center;
+justify-content: center;
+
+}
+.single{
+  padding-left: 2rem;
+  color: rgb(219, 216, 216);
+}
+.single p{
+  font-size: 15px;
+}
+
+.close{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 999;  
+  color:white;
+background-color:rgba(0, 0, 0, 0.284);
+  border-radius: 100%;
+  border: none;
+}
+
+.help-btn{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  color:white;
+background-color:rgba(0, 0, 0, 0.284);
+border-radius: 100%;
+border: none;
+}

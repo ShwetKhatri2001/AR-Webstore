@@ -1,14 +1,16 @@
 import sheenchair from "../../assets/models/sheenchair.glb";
 import ioschair from "../../assets/models/sheenchair.usdz";
 import QRCode from "qrcode.react";
-
+import Help from "./Help";
+import { useState } from "react";
 const ModelViewer = () => {
+  const [display,setDisplay]=useState(false);
   const modelViewer = {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: 400,
-    height: 300,
+    width: 500,
+    height: 400,
     borderRadius: 10,
   };
 
@@ -47,7 +49,14 @@ const ModelViewer = () => {
           ar
           auto-rotate
           camera-controls
-        ></model-viewer>
+        >
+
+        
+        {
+          display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
+          <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?</button>
+        }
+        </model-viewer>
         <div style={{ display: "flex" }}>
           <QRCode
             id="1234"
