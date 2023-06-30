@@ -9,8 +9,8 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: 500,
-    height: 400,
+    width: 400,
+    height: 300,
     borderRadius: 10,
   };
 
@@ -36,6 +36,11 @@ const ModelViewer = () => {
         <button slot="ar-button" className="arbutton">
           View in your space
         </button>
+        
+        {
+          display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
+          <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
+        }
       </model-viewer>
     );
   } else {
@@ -54,7 +59,7 @@ const ModelViewer = () => {
         
         {
           display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
-          <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?</button>
+          <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
         </model-viewer>
         <div style={{ display: "flex" }}>

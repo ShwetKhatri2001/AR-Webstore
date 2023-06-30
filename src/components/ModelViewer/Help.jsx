@@ -1,8 +1,7 @@
 import React from 'react'
-// import {IoIosClose} from 'react-icons/io'
 const Help = () => {
     return (
-    <div className='user-login' >
+    <div className='help-component' >
        
        
        <div className='single'>

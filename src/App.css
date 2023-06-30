@@ -33,7 +33,7 @@
   outline: 1px solid #4285f4;
 }
 
-.user-login
+.help-component
 {
     z-index: 998;
     position: fixed;
@@ -72,9 +72,24 @@ background-color:rgba(0, 0, 0, 0.284);
   right: 10px;
   bottom: 5px;
   font-size: 15px;
-  cursor: pointer;
   color:white;
 background-color:rgba(0, 0, 0, 0.284);
 border-radius: 100%;
 border: none;
+}
+.help-btn:hover{
+  background-color: black;
+  
+}
+.help-btn span {
+  display: none;
+  position: absolute;
+font-size: 15px;
+bottom: 22px;
+right: 60%;
+background-color: rgba(0, 0, 0, 0.83);
+padding: 20% 40%;
+}
+.help-btn:hover span{
+display: block;
 }
