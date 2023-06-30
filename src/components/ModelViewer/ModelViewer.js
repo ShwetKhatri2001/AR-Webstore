@@ -1,19 +1,61 @@
-import sheenchair from "../../assets/models/sheenchair.glb";
-import ioschair from "../../assets/models/sheenchair.usdz";
 import QRCode from "qrcode.react";
+import {React} from 'react';
+import './ModelViewer.css'
+import items from './ModelItems.js'
+import {useState} from 'react';
 
 const ModelViewer = () => {
+  
+
   const modelViewer = {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: 400,
+    width: 300,
     height: 300,
     borderRadius: 10,
   };
+  
+  const filterSection1Style = {
+    width: "80%",
+    backgroundColor: "white",
+    padding: 20,
+    borderRadius: 10,
+  };
+
+  const navbarStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 20px",
+    background: "#333",
+    color: "#fff",
+  };
+
+  
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedColor, setselectedColor] = useState("");
+  const [ItemList, setItemList] = useState();
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const handleColorChange = (event)=>{
+    setselectedColor(event.target.value);
+  }
+
+  const clearFilter = () => {
+    setSelectedCategory("All");
+    setselectedColor("");
+  };
+  const filteredModels = items.filter(item => (selectedCategory === "All" || item.category === selectedCategory) &&
+  (selectedColor === "" || item.color === selectedColor));
+
+  //const filteredModels = selectedCategory === "All" && selectedColor
+  console.log(filteredModels);
 
   if (
-    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPhone/i ) ||
     navigator.userAgent.match(/webOS/i) ||
     navigator.userAgent.match(/Android/i) ||
     navigator.userAgent.match(/iPad/i) ||
@@ -22,50 +64,115 @@ const ModelViewer = () => {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     return (
-      <model-viewer
-        style={modelViewer}
-        src={sheenchair}
-        ios-src={ioschair}
-        alt="A 3D model of an astronaut"
-        ar
-        auto-rotate
-        camera-controls
-      >
-        <button slot="ar-button" className="arbutton">
-          View in your space
-        </button>
-      </model-viewer>
+      <>
+        {items.map((item)=>(
+          <div key={item.id}>
+            <model-viewer
+              style={modelViewer}
+              src={item.src}
+              ios-src={item.iosSrc}
+              alt="A 3D model of an astronaut"
+              ar
+              auto-rotate
+              camera-controls
+              
+            >
+              <button slot="ar-button" className="arbutton">
+                View in your space
+              </button>
+            </model-viewer>
+
+          </div>
+        ))}
+
+      </>  
+      
     );
   } else {
     return (
-      <div style={{ margin: 0 }}>
-        <model-viewer
-          style={modelViewer}
-          src={sheenchair}
-          ios-src={ioschair}
-          alt="A 3D model of an astronaut"
-          ar
-          auto-rotate
-          camera-controls
-        ></model-viewer>
-        <div style={{ display: "flex" }}>
-          <QRCode
-            id="1234"
-            value={window.location.href}
-            size={128}
-            bgColor={"#ffffff"}
-            fgColor={"#000000"}
-            level={"H"}
-            includeMargin={true}
-          />
+      <>
+        <nav className="navbarStyle">
+          <h1>AR-Webstore</h1>
           <div>
-            <h5 style={{ marginTop: 30 }}>
-              Scan the QR code for AR View on mobile
-            </h5>
-            <h5>URL : {window.location.href}</h5>
+            <span><button>Sign In</button></span>
+            <span><button>Cart</button></span>
+          </div>
+        </nav>
+        <div style={{display:"flex"}}>
+        <section className="filterSectionStyle">
+        <h3>Filter Options</h3>
+        <div>
+          <label htmlFor="category">Category:</label>
+          <select 
+            name="category" 
+            id="category"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            <option value="">All</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Art">Art</option>
+            <option value="Vehicle">Vehicle</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="color">Color:</label>
+              <select
+                name="color"
+                id="color"
+                value={selectedColor}
+                onChange={handleColorChange}
+              >
+                <option value="">All</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Brown">Brown</option>
+                <option value="Multicolor">Multicolor</option>
+                
+              </select>    
+        </div>
+        <div><button onClick={clearFilter}>Clear Filter</button></div>
+        </section>
+        <section style={filterSection1Style}>
+        <div style={{display:"flex", flexWrap: 'wrap'}}>
+        {filteredModels.map((item) => (
+        <div key={item.id} style={{ width: '33.33%', padding: '10px' }}>
+          <h1>{item.name}</h1>
+          <model-viewer
+            style={modelViewer}
+            src={item.src}
+            ios-src={item.iosSrc}
+            alt={`A 3D model of ${item.name}`}
+            ar
+            auto-rotate
+            camera-controls
+          ></model-viewer>
+          <div style={{ display: "flex" }}>
+            <QRCode
+              id={item.id}
+              value={window.location.href}
+              size={128}
+              bgColor={"#ffffff"}
+              fgColor={"#000000"}
+              level={"H"}
+              includeMargin={true}
+            />
+            <div>
+              <h5 style={{ marginTop: 30 }}>
+                Scan the QR code for AR View on mobile
+              </h5>
+              <h5>URL: {window.location.href}</h5>
+            </div>
           </div>
         </div>
-      </div>
+      ))}
+        </div> 
+         
+        </section>
+        </div>        
+      </>
+      
     );
   }
 };
