@@ -3,7 +3,7 @@ import "@google/model-viewer/dist/model-viewer.min.js";
 import ModelViewer from "./components/ModelViewer/ModelViewer";
 
 const App = () => {
-  return <ModelViewer />;
+  return        <ModelViewer />;
 };
 
 export default App;
