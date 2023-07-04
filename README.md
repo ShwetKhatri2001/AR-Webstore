@@ -55,9 +55,9 @@ It showcases a 3D photorealistic model of a chair in your own environment using 
 ## [Live Link](https://ar-webstore.netlify.app/)
 
 <div style="display:flex;">
-  <img src="https://user-images.githubusercontent.com/56475750/220354002-de05a051-8cf1-41ea-9a40-fe84d37fae5b.jpeg" 
-            alt="before" width="300"/>
-  <img src="https://user-images.githubusercontent.com/56475750/220354044-a4730f02-52df-41d5-b54c-077043f56456.jpeg" 
+  <img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/328c2a53-4ac1-4016-ba4e-4e40499d6e45" 
+            alt="before" width="410"/>
+  <img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/e2593277-08c3-4344-9161-e9a36506eab6" 
             alt="after" width="300"/>
 </div>
 <a name="goals"></a>
