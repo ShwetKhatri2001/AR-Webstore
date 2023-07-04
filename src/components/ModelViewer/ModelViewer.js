@@ -5,6 +5,8 @@ import Help from "./Help";
 import { useRef, useState } from "react";
 const ModelViewer = () => {
   const [display,setDisplay]=useState(false);
+
+    //accessing product for full screen start 
   const model= useRef()
   function toggle() {
     
@@ -13,7 +15,8 @@ const ModelViewer = () => {
     }
     else if(document.exitFullscreen)document.exitFullscreen();
   }
- 
+        //  full screen code end
+
   const modelViewer = {
     backgroundColor: "#eee",
     overflowX: "hidden",
@@ -34,6 +37,7 @@ const ModelViewer = () => {
   ) {
     return (
       <model-viewer
+      ref={model}
         style={modelViewer}
         src={sheenchair}
         ios-src={ioschair}
@@ -46,9 +50,8 @@ const ModelViewer = () => {
           View in your space
         </button>
         
-          <button className='close' onClick={()=>toggle()} >&#10006;</button>
-          <button className="fullscreen-btn" onClick={()=>toggle()}>[ / ]<span>full screen</span></button>
-  
+        <button className="fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
+          
         {
           display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
           <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
@@ -58,7 +61,8 @@ const ModelViewer = () => {
   } else {
     return (
       <div style={{ margin: 0 }} >
-        <model-viewer ref={model}
+        <model-viewer 
+        ref={model}
           style={modelViewer}
           src={sheenchair}
           ios-src={ioschair}
