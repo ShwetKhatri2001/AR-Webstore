@@ -2,9 +2,18 @@ import sheenchair from "../../assets/models/sheenchair.glb";
 import ioschair from "../../assets/models/sheenchair.usdz";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const ModelViewer = () => {
   const [display,setDisplay]=useState(false);
+  const model= useRef()
+  function toggle() {
+    
+    if(!document.fullscreenElement){
+        model.current.requestFullscreen();
+    }
+    else if(document.exitFullscreen)document.exitFullscreen();
+  }
+ 
   const modelViewer = {
     backgroundColor: "#eee",
     overflowX: "hidden",
@@ -37,6 +46,9 @@ const ModelViewer = () => {
           View in your space
         </button>
         
+          <button className='close' onClick={()=>toggle()} >&#10006;</button>
+          <button className="fullscreen-btn" onClick={()=>toggle()}>[ / ]<span>full screen</span></button>
+  
         {
           display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
           <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
@@ -45,8 +57,8 @@ const ModelViewer = () => {
     );
   } else {
     return (
-      <div style={{ margin: 0 }}>
-        <model-viewer
+      <div style={{ margin: 0 }} >
+        <model-viewer ref={model}
           style={modelViewer}
           src={sheenchair}
           ios-src={ioschair}
@@ -55,7 +67,7 @@ const ModelViewer = () => {
           auto-rotate
           camera-controls
         >
-
+          <button className="fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
         
         {
           display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
