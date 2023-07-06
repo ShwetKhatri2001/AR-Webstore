@@ -14,24 +14,8 @@ const ModelViewer = () => {
     width: 300,
     height: 300,
     borderRadius: 10,
+    margin: 70,
   };
-  
-  const filterSection1Style = {
-    width: "80%",
-    backgroundColor: "white",
-    padding: 20,
-    borderRadius: 10,
-  };
-
-  const navbarStyle = {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "10px 20px",
-    background: "#333",
-    color: "#fff",
-  };
-
   
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedColor, setselectedColor] = useState("");
@@ -65,8 +49,43 @@ const ModelViewer = () => {
   ) {
     return (
       <>
+        <section className="SectionStyle">
+        
+        <div>
+          <label htmlFor="category">Category:</label>
+          <select 
+            name="category" 
+            id="category"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            <option value="">All</option>
+            <option value="Furniture">Furniture</option>
+            <option value="Art">Art</option>
+            <option value="Vehicle">Vehicle</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="color">Color:</label>
+              <select
+                name="color"
+                id="color"
+                value={selectedColor}
+                onChange={handleColorChange}
+              >
+                <option value="">All</option>
+                <option value="Blue">Blue</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Brown">Brown</option>
+                <option value="Multicolor">Multicolor</option>
+                
+              </select>    
+        </div>
+        <div><button onClick={clearFilter}>Clear Filter</button></div>
+        </section>
         {items.map((item)=>(
-          <div key={item.id}>
+          <div key={item.id} className="Mobile">
             <model-viewer
               style={modelViewer}
               src={item.src}
@@ -134,10 +153,10 @@ const ModelViewer = () => {
         </div>
         <div><button onClick={clearFilter}>Clear Filter</button></div>
         </section>
-        <section style={filterSection1Style}>
-        <div style={{display:"flex", flexWrap: 'wrap'}}>
+        <section className="filterSection1Style">
+        <div className="container" >
         {filteredModels.map((item) => (
-        <div key={item.id} style={{ width: '33.33%', padding: '10px' }}>
+        <div key={item.id} className="ContainerModel">
           <h1>{item.name}</h1>
           <model-viewer
             style={modelViewer}
