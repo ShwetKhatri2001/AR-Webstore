@@ -53,8 +53,8 @@ const ModelViewer = () => {
         <button className="fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
           
         {
-          display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
-          <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
+          display?<><button className= {document.fullscreenElement?'close fz  ':'close'} onClick={()=>setDisplay(false)} >&#10006;</button>
+          <Help /></>:<button className= "help-btn"  onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
       </model-viewer>
     );
@@ -71,10 +71,10 @@ const ModelViewer = () => {
           auto-rotate
           camera-controls
         >
-          <button className="fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
+          <button className= "fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
         
         {
-          display?<><button className='close' onClick={()=>setDisplay(false)} >&#10006;</button>
+          display?<><button className={document.fullscreenElement?'close fz  ':'close'} onClick={()=>setDisplay(false)} >&#10006;</button>
           <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
         </model-viewer>
