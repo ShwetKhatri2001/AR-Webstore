@@ -1,4 +1,3 @@
-
 .arbutton {
   background-image: url(./assets/ic_view_in_ar_new_googblue_48dp.png);
   background-repeat: no-repeat;
@@ -51,7 +50,7 @@ justify-content: center;
   color: rgb(219, 216, 216);
 }
 .single p{
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .close{
@@ -69,19 +68,21 @@ background-color:rgba(0, 0, 0, 0.284);
 
 .help-btn{
   position: absolute;
-  right: 10px;
-  bottom: 5px;
+  right: 25px;
+  bottom: 19px;
   font-size: 15px;
   color:white;
 background-color:rgba(0, 0, 0, 0.284);
 border-radius: 100%;
 border: none;
+cursor: pointer;
 }
 .help-btn:hover{
   background-color: black;
   
 }
-.help-btn span {
+.help-btn span,.fullscreen-btn span  {
+ width: 100px;
   display: none;
   position: absolute;
 font-size: 15px;
@@ -90,6 +91,23 @@ right: 60%;
 background-color: rgba(0, 0, 0, 0.83);
 padding: 20% 40%;
 }
-.help-btn:hover span{
+.help-btn:hover span, .fullscreen-btn:hover span {
 display: block;
+}
+.fullscreen-btn {
+  position: absolute;
+  right: 55px;
+  bottom: 18px;
+  font-size: 15px;
+  color:white;
+background-color:rgba(0, 0, 0, 0.284);
+border-radius: 100%;
+border: none; 
+cursor: pointer;
+}
+.fz {
+  font-size:35px
+  }
+.fz p{
+font-size:25px
 }

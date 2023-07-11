@@ -1,7 +1,7 @@
 import React from 'react'
 const Help = () => {
     return (
-    <div className='help-component' >
+    <div className={document.fullscreenElement?'help-component fz':'help-component'} >
        
        
        <div className='single'>
