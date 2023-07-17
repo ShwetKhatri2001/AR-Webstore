@@ -1,0 +1,30 @@
+/* error page */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn1 {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: blue;
+  }
+  .error-text {
+    text-align: center;
+    padding: 20px;
+    font-family: Cursive;
+  }
+  .error {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 15px;
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
