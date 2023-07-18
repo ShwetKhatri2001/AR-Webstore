@@ -1,7 +1,7 @@
 import QRCode from "qrcode.react";
 import {React} from 'react';
-import './ModelViewer.css'
-import items from './ModelItems.js'
+import '../../Products/ProductList.css'
+import items from '../../Products/ProductList'
 import {useState} from 'react';
 
 const ModelViewer = () => {
@@ -19,7 +19,7 @@ const ModelViewer = () => {
   
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedColor, setselectedColor] = useState("");
-  const [ItemList, setItemList] = useState();
+  //const [ItemList, setItemList] = useState();
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
@@ -36,7 +36,7 @@ const ModelViewer = () => {
   (selectedColor === "" || item.color === selectedColor));
 
   //const filteredModels = selectedCategory === "All" && selectedColor
-  console.log(filteredModels);
+  //console.log(filteredModels);
 
   if (
     navigator.userAgent.match(/iPhone/i ) ||
@@ -84,7 +84,8 @@ const ModelViewer = () => {
         </div>
         <div><button onClick={clearFilter}>Clear Filter</button></div>
         </section>
-        {items.map((item)=>(
+        <section className="Mobile1">
+        {filteredModels.map((item)=>(
           <div key={item.id} className="Mobile">
             <model-viewer
               style={modelViewer}
@@ -103,6 +104,8 @@ const ModelViewer = () => {
 
           </div>
         ))}
+        </section>
+        
 
       </>  
       
