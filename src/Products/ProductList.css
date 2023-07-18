@@ -1,0 +1,184 @@
+.body{
+  margin-top:50%;
+}
+.navbarStyle {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    overflow:hidden;
+    
+  }
+  
+  .navbarStyle h1 {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .navbarStyle button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbarStyle button:hover {
+    background-color: #555;
+  }
+  
+  .navbarStyle button:last-child {
+    margin-left: 8px;
+  }
+
+.filterSectionStyle {
+    width: 15%;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filterSectionStyle h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .filterSectionStyle label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .filterSectionStyle select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .filterSectionStyle button {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .filterSectionStyle button:hover {
+    background-color: #555;
+  }
+  
+  .filterSectionStyle button:focus {
+    outline: none;
+  }
+
+  .filterSectionStyle select[name="color"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    cursor: pointer;
+    
+  }
+  
+  .filterSectionStyle select[name="color"] option {
+    padding: 8px;
+  }
+  
+  .filterSectionStyle select[name="color"] option:first-child {
+    font-weight: bold;
+  }
+  
+  .filterSectionStyle select[name="color"] option:not(:first-child) {
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: 8px center;
+  }
+
+  .filterSection1Style {
+    width: 80%;
+    min-height: 100%;
+    background-color: white;
+    padding: 20;
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 50%;
+    min-height: 100%;
+  }
+  .ContainerModel{
+    min-width: 33.33%;
+    min-height: 33.33%;
+    margin: 30px;
+  } 
+
+  .SectionStyle{
+    margin: 5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10;
+    width: 100%;
+    background-color: rgb(188, 211, 211);
+    
+  }
+
+  .SectionStyle div button{
+    
+    background-color: #333;
+    color: #fff;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .SectionStyle div {
+    margin: 15px;
+    
+  }
+
+  .SectionStyle div select{
+    margin: 3px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .Mobile1{
+    border: 5px red;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  
