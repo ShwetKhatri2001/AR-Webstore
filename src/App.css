@@ -32,82 +32,83 @@
   outline: 1px solid #4285f4;
 }
 
-.help-component
-{
-    z-index: 998;
-    position: fixed;
-    top: 0;left: 0;
-    height:100%;
-    width: 100%;
-    display: flex;
-    background-color: rgba(74, 74, 74, 0.9);
-align-items: center;
-justify-content: center;
-
+.help-component {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgba(74, 74, 74, 0.9);
+  align-items: center;
+  justify-content: center;
 }
-.single{
+.single {
   padding-left: 2rem;
   color: rgb(219, 216, 216);
 }
-.single p{
+.single p {
   font-size: 12px;
 }
 
-.close{
+.close {
   position: absolute;
   right: 10px;
   top: 5px;
   font-size: 15px;
   cursor: pointer;
-  z-index: 999;  
-  color:white;
-background-color:rgba(0, 0, 0, 0.284);
+  z-index: 999;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.284);
   border-radius: 100%;
   border: none;
 }
 
-.help-btn{
+.help-btn {
   position: absolute;
   right: 25px;
   bottom: 19px;
   font-size: 15px;
-  color:white;
-background-color:rgba(0, 0, 0, 0.284);
-border-radius: 100%;
-border: none;
-cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.284);
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
 }
-.help-btn:hover{
+.help-btn:hover {
   background-color: black;
-  
 }
-.help-btn span,.fullscreen-btn span  {
- width: 100px;
+.help-btn span,
+.fullscreen-btn span {
+  width: 100px;
   display: none;
   position: absolute;
-font-size: 15px;
-bottom: 22px;
-right: 60%;
-background-color: rgba(0, 0, 0, 0.83);
-padding: 20% 40%;
+  font-size: 15px;
+  bottom: 22px;
+  right: 60%;
+  background-color: rgba(0, 0, 0, 0.83);
+  padding: 20% 40%;
 }
-.help-btn:hover span, .fullscreen-btn:hover span {
-display: block;
+.help-btn:hover span,
+.fullscreen-btn:hover span {
+  display: block;
 }
 .fullscreen-btn {
   position: absolute;
   right: 55px;
   bottom: 18px;
   font-size: 15px;
-  color:white;
-background-color:rgba(0, 0, 0, 0.284);
-border-radius: 100%;
-border: none; 
-cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.284);
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
 }
 .fz {
-  font-size:35px
-  }
-.fz p{
-font-size:25px
+  font-size: 35px;
 }
+.fz p {
+  font-size: 25px;
+}
+
