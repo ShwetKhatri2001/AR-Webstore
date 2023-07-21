@@ -21,10 +21,10 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: "99vw",
-    maxWidth: 400,
-    height: 300,
-    borderRadius: 10,
+    width: "80vw",
+    maxWidth: 350,
+    height: 250,
+    borderRadius: 15,
   };
 
   if (
@@ -37,6 +37,7 @@ const ModelViewer = () => {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     return (
+      <div class="model-view">
       <model-viewer
       ref={model}
         style={modelViewer}
@@ -58,10 +59,11 @@ const ModelViewer = () => {
           <Help /></>:<button className= "help-btn"  onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
       </model-viewer>
+      </div>
     );
   } else {
     return (
-      <div style={{ margin: 0 }} >
+      <div class="model-view" style={{ margin: 0 }} >
         <model-viewer 
         ref={model}
           style={modelViewer}
@@ -83,19 +85,33 @@ const ModelViewer = () => {
           <QRCode
             id="1234"
             value={window.location.href}
-            size={128}
+            size={120}
             bgColor={"#ffffff"}z
             fgColor={"#000000"}
             level={"H"}
             includeMargin={true}
           />
           <div>
+            <div class="pname">Product_Name</div>
+            <div class="rating-sec">
+            <div>Rating</div>
+              <div>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              </div>
+            </div>
+            <div>Rs. 1000</div>
             <h5 style={{ marginTop: 30 }}>
               Scan the QR code for AR View on mobile
             </h5>
-            <h5>URL : {window.location.href}</h5>
           </div>
         </div>
+        <div class="add-icon">
+          +
+        </div>  
       </div>
     );
   }
