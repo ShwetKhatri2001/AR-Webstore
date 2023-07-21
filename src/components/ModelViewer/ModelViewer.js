@@ -25,6 +25,7 @@ const ModelViewer = () => {
     maxWidth: 350,
     height: 250,
     borderRadius: 15,
+
   };
 
   if (
@@ -86,6 +87,7 @@ const ModelViewer = () => {
             id="1234"
             value={window.location.href}
             size={120}
+
             bgColor={"#ffffff"}z
             fgColor={"#000000"}
             level={"H"}
