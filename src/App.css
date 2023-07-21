@@ -45,7 +45,7 @@
   justify-content: center;
 }
 .single {
-  padding-left: 2rem;
+  padding-left: 1rem;
   color: rgb(219, 216, 216);
 }
 .single p {
@@ -55,12 +55,12 @@
 .close {
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 10px;
   font-size: 15px;
   cursor: pointer;
   z-index: 999;
   color: white;
-  background-color: rgba(0, 0, 0, 0.284);
+  background-color: rgba(235, 88, 51, 0.751);
   border-radius: 100%;
   border: none;
 }
@@ -76,19 +76,20 @@
   border: none;
   cursor: pointer;
 }
-.help-btn:hover {
-  background-color: black;
+.help-btn:hover, .fullscreen-btn:hover {
+  background-image: radial-gradient(circle, #ff55b6, #e96cd0, #cf7fe1, #b48fec, #9c9cee, #88a9f6, #76b5f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
 .help-btn span,
 .fullscreen-btn span {
-  width: 100px;
+  width: 50px;
   display: none;
   position: absolute;
-  font-size: 15px;
+  font-size: 10px;
   bottom: 22px;
   right: 60%;
-  background-color: rgba(0, 0, 0, 0.83);
-  padding: 20% 40%;
+  background-color: rgba(0, 0, 0, 0.545);
+  padding: 20% 20%;
+  border-radius: 10px;
 }
 .help-btn:hover span,
 .fullscreen-btn:hover span {
@@ -114,6 +115,8 @@
 
 .qr-sec{
   display: flex;
+  padding-top: 10px;
+  gap:10px;
 }
 
 @media (max-width:400px) {
@@ -122,5 +125,51 @@
       align-items: center;
       padding: 0 10px;
       margin-top: 20px;
+      height: 90vh;
     }
+}
+
+.model-view{
+  background-color: #eee;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px;
+  transition: all 0.7s;
+}
+.model-view:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 10px 1.5px;
+}
+.add-icon{
+  margin-left: 90%;
+  background: rgba(235,88,51,0.75 );
+  border-radius: 50%;
+  color:white;
+  font-weight:bolder;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(1.1);
+  font-size: 22px;
+}
+.add-icon:hover{
+  transform: scale(1.2);
+  background-color: rgb(235,88,51);
+}
+.checked {
+  color: orange;
+}
+.rating-sec{
+  display: flex;
+  gap: 5px;
+}
+.star{
+  color: #e8ba47;
+}
+.pname{
+  font-size: large;
+  font-weight: bold;
 }
