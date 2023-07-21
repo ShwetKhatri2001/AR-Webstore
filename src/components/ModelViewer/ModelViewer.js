@@ -21,7 +21,8 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: 400,
+    width: "99vw",
+    maxWidth: 400,
     height: 300,
     borderRadius: 10,
   };
@@ -78,12 +79,12 @@ const ModelViewer = () => {
           <Help /></>:<button className="help-btn" onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
         </model-viewer>
-        <div style={{ display: "flex" }}>
+        <div className="qr-sec">
           <QRCode
             id="1234"
             value={window.location.href}
             size={128}
-            bgColor={"#ffffff"}
+            bgColor={"#ffffff"}z
             fgColor={"#000000"}
             level={"H"}
             includeMargin={true}
