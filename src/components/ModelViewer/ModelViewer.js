@@ -21,7 +21,7 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: "100%",
+    width: "90vw",
     maxWidth: 400,
     height: 300,
     borderRadius: 15,
@@ -37,6 +37,7 @@ const ModelViewer = () => {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     return (
+      <div class="model-view">
       <model-viewer
       ref={model}
         style={modelViewer}
@@ -58,6 +59,7 @@ const ModelViewer = () => {
           <Help /></>:<button className= "help-btn"  onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
       </model-viewer>
+      </div>
     );
   } else {
     return (
