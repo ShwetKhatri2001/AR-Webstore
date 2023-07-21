@@ -24,7 +24,7 @@ const ModelViewer = () => {
     width: "100%",
     maxWidth: 400,
     height: 300,
-    borderRadius: 10,
+    borderRadius: 15,
   };
 
   if (
@@ -61,7 +61,7 @@ const ModelViewer = () => {
     );
   } else {
     return (
-      <div style={{ margin: 0 }} >
+      <div class="model-view" style={{ margin: 0 }} >
         <model-viewer 
         ref={model}
           style={modelViewer}
@@ -83,7 +83,7 @@ const ModelViewer = () => {
           <QRCode
             id="1234"
             value={window.location.href}
-            size={128}
+            size={120}
             bgColor={"#ffffff"}z
             fgColor={"#000000"}
             level={"H"}
@@ -96,6 +96,9 @@ const ModelViewer = () => {
             <h5>URL : {window.location.href}</h5>
           </div>
         </div>
+        <div class="add-icon">
+          +
+        </div>  
       </div>
     );
   }
