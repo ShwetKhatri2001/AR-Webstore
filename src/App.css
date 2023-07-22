@@ -125,16 +125,29 @@
       align-items: center;
       padding: 0 10px;
       margin-top: 20px;
-      height: 90vh;
     }
 }
+    .fullscreen-mob {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+    .help-mob {
+      position: relative;
+      right: -2px;
+      bottom: 0;
+    }
+
 
 .model-view{
   background-color: #eee;
-  padding: 10px 10px;
+  padding: 5px 5px;
   border-radius: 10px;
   box-shadow: 0 0 5px 1px;
   transition: all 0.7s;
+  margin: 0 auto;
+  width: 88%;
+  max-width: 700px;
 }
 .model-view:hover{
   transform: scale(1.04);
@@ -159,8 +172,22 @@
   transform: scale(1.2);
   background-color: rgb(235,88,51);
 }
-.checked {
-  color: orange;
+.add-icon-mob{
+  margin-left: 80%;
+  background: rgba(235,88,51,0.75 );
+  border-radius: 50%;
+  color:white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 20px;
+}
+.add-icon-mob:hover{
+  transform: scale(1.1);
+  background-color: rgb(235,88,51);
 }
 .rating-sec{
   display: flex;
