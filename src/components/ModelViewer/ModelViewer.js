@@ -21,10 +21,21 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: "99vw",
-    maxWidth: 400,
-    height: 300,
-    borderRadius: 10,
+    width: "80vw",
+    margin:"0 auto",
+    maxWidth: 350,
+    height: 250,
+    borderRadius: 15,
+  };
+  const modelViewer1 = {
+    backgroundColor: "#eee",
+    overflowX: "hidden",
+    posterColor: "#eee",
+    width: "80vw",
+    margin:"0 auto",
+    maxWidth: 250,
+    height: 200,
+    borderRadius: 15,
   };
 
   if (
@@ -37,9 +48,10 @@ const ModelViewer = () => {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     return (
+      <div class="model-view">
       <model-viewer
       ref={model}
-        style={modelViewer}
+        style={modelViewer1}
         src={sheenchair}
         ios-src={ioschair}
         alt="A 3D model of an astronaut"
@@ -51,17 +63,50 @@ const ModelViewer = () => {
           View in your space
         </button>
         
-        <button className="fullscreen-btn" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
+        <button className="fullscreen-btn fullscreen-mob" onClick={()=>toggle()}>&#x26F6;<span>full screen</span></button>
           
         {
           display?<><button className= {document.fullscreenElement?'close fz  ':'close'} onClick={()=>setDisplay(false)} >&#10006;</button>
-          <Help /></>:<button className= "help-btn"  onClick={()=>setDisplay(true)} >?<span>help</span></button>
+          <Help /></>:<button className= "help-btn help-mob"  onClick={()=>setDisplay(true)} >?<span>help</span></button>
         }
       </model-viewer>
+      <div className="qr-sec">
+          <QRCode
+            id="1234"
+            value={window.location.href}
+            size={80}
+            bgColor={"#ffffff"}z
+            fgColor={"#000000"}
+            level={"H"}
+            includeMargin={true}
+          />
+          <div>
+            <div class="pname">Product_Name</div>
+            <div class="rating-sec">
+            <div>Rating</div>
+              <div>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              </div>
+            </div>
+            <div>Rs. 1000</div>
+            <div style={{ marginTop: 20 , fontWeight:"bold" }}>
+              Scan the QR code for AR View on mobile
+            </div>
+          </div>
+        </div>
+        <div class="add-icon add-icon-mob">
+          +
+        </div>
+      </div>
+      
     );
   } else {
     return (
-      <div style={{ margin: 0 }} >
+      <div class="model-view" style={{ margin: 0 }} >
         <model-viewer 
         ref={model}
           style={modelViewer}
@@ -83,19 +128,33 @@ const ModelViewer = () => {
           <QRCode
             id="1234"
             value={window.location.href}
-            size={128}
+            size={120}
             bgColor={"#ffffff"}z
             fgColor={"#000000"}
             level={"H"}
             includeMargin={true}
           />
           <div>
+            <div class="pname">Product_Name</div>
+            <div class="rating-sec">
+            <div>Rating</div>
+              <div>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              </div>
+            </div>
+            <div>Rs. 1000</div>
             <h5 style={{ marginTop: 30 }}>
               Scan the QR code for AR View on mobile
             </h5>
-            <h5>URL : {window.location.href}</h5>
           </div>
         </div>
+        <div class="add-icon">
+          +
+        </div>  
       </div>
     );
   }
