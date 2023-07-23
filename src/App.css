@@ -32,6 +32,12 @@
   outline: 1px solid #4285f4;
 }
 
+
+.help-btn, 
+.fullscreen-btn {
+  all: unset;
+}
+
 .help-component {
   z-index: 998;
   position: fixed;
@@ -66,18 +72,25 @@
 }
 
 .help-btn {
-  position: absolute;
-  right: 25px;
+  background-color: rgba(0,0,0,.284);
   bottom: 19px;
-  font-size: 15px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.284);
-  border-radius: 100%;
+  right: 1.25rem;
   border: none;
+  border-radius: 100%;
+  color: #fff;
   cursor: pointer;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .2rem;
 }
 .help-btn:hover, .fullscreen-btn:hover {
-  background-image: radial-gradient(circle, #ff55b6, #e96cd0, #cf7fe1, #b48fec, #9c9cee, #88a9f6, #76b5f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: radial-gradient(circle, #ff55b6, #e96cd0, #cf7fe1, #b48fec, #9c9cee, #88a9f6, #76b5f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) !important;
 }
 .help-btn span,
 .fullscreen-btn span {
@@ -96,15 +109,23 @@
   display: block;
 }
 .fullscreen-btn {
-  position: absolute;
-  right: 55px;
-  bottom: 18px;
-  font-size: 15px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.284);
+  background-color: rgba(0,0,0,.284);
   border-radius: 100%;
-  border: none;
+  bottom: 18px;
+  color: #fff;
   cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  right: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .225rem;
+  line-height: 0;
 }
 .fz {
   font-size: 35px;
