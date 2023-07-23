@@ -1,184 +1,85 @@
 .body{
-  margin-top:50%;
+  margin-top:100%;
 }
-.navbarStyle {
-    display: flex;
-    height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    overflow:hidden;
-    
-  }
-  
-  .navbarStyle h1 {
-    text-align: center;
-    margin: 0;
-  }
-  
-  .navbarStyle button {
-    background-color: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    border-radius: 4px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .navbarStyle button:hover {
-    background-color: #555;
-  }
-  
-  .navbarStyle button:last-child {
-    margin-left: 8px;
-  }
+.filterSection1Style {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 60%;
+}
 
-.filterSectionStyle {
-    width: 15%;
-    min-height: 100%;
-    background-color: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
-    margin-right: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .filterSectionStyle h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .filterSectionStyle label {
-    display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .filterSectionStyle select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .filterSectionStyle button {
-    display: block;
-    margin-top: 15px;
-    padding: 10px 16px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .filterSectionStyle button:hover {
-    background-color: #555;
-  }
-  
-  .filterSectionStyle button:focus {
-    outline: none;
-  }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 1%;
+  width: 100%;
+  min-height: 100%;
+  justify-content: flex-start;
+}
 
-  .filterSectionStyle select[name="color"] {
-    width: 100%;
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    appearance: none;
-    background-color: #fff;
-    background-image: linear-gradient(to bottom, #fff, #fff);
-    background-position: right 8px center;
-    background-repeat: no-repeat;
-    background-size: 12px;
-    cursor: pointer;
-    
-  }
-  
-  .filterSectionStyle select[name="color"] option {
-    padding: 8px;
-  }
-  
-  .filterSectionStyle select[name="color"] option:first-child {
-    font-weight: bold;
-  }
-  
-  .filterSectionStyle select[name="color"] option:not(:first-child) {
-    padding-left: 24px;
-    background-repeat: no-repeat;
-    background-position: 8px center;
-  }
+.ContainerModel{
+  box-sizing: border-box;
+  background-color: rgb(242, 242, 242);
+  width: 45%;
+  height: 80%;
+  margin: 20px;
+  justify-self: center;
+  border: 1px solid rgb(38, 38, 40);
+} 
 
-  .filterSection1Style {
-    width: 80%;
-    min-height: 100%;
-    background-color: white;
-    padding: 20;
-  }
+.ContainerModel h1{
+  padding: 20px;
+  justify-self: center;
+  text-align: center;
+  background-color: rgb(198, 198, 198);
+  margin-top: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 50%;
-    min-height: 100%;
-  }
-  .ContainerModel{
-    min-width: 33.33%;
-    min-height: 33.33%;
-    margin: 30px;
-  } 
+.ContainerModel h5{
+  margin:5px;
+  justify-self: center;
+  text-align: center;
+}
 
-  .SectionStyle{
-    margin: 5;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10;
-    width: 100%;
-    background-color: rgb(188, 211, 211);
-    
-  }
+.qrCode{
+  margin: 2%;
+  margin-left: 2%;
 
-  .SectionStyle div button{
-    
-    background-color: #333;
-    color: #fff;
-    padding: 7px 14px;
-    border: none;
-    border-radius: 4px;
-    font-size: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .SectionStyle div {
-    margin: 15px;
-    
-  }
+}
 
-  .SectionStyle div select{
-    margin: 3px;
-    padding: 6px 12px;
-    border: none;
-    border-radius: 4px;
-    font-size: 14px;
-  }
+.box1{
+  display: flex;
+  background-color: rgb(198, 198, 198);
+  margin-top: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 
-  .Mobile1{
-    border: 5px red;
-    margin-right: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+}
+
+.Text{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.ContainerModel model-viewer{
+  background-color: rgb(243, 240, 240);
+  width: 80%;
+  height: 500px;
+  border-radius: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10%;
+};
+.Mobile1{
+  margin-top: 100%;
+  border: 2px rgb(26, 25, 25);
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
   
