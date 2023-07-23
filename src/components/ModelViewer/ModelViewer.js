@@ -2,38 +2,9 @@ import QRCode from "qrcode.react";
 import {React} from 'react';
 import '../../Products/ProductList.css'
 import items from '../../Products/ProductList'
-import {useState} from 'react';
+//import {useState} from 'react';
 
 const ModelViewer = () => {
-  
-
-  const modelViewer = {
-    backgroundColor: "#eee",
-    overflowX: "hidden",
-    posterColor: "#eee",
-    width: 300,
-    height: 300,
-    borderRadius: 10,
-    margin: 70,
-  };
-  
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedColor, setselectedColor] = useState("");
-  //const [ItemList, setItemList] = useState();
-  const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
-  const handleColorChange = (event)=>{
-    setselectedColor(event.target.value);
-  }
-
-  const clearFilter = () => {
-    setSelectedCategory("All");
-    setselectedColor("");
-  };
-  const filteredModels = items.filter(item => (selectedCategory === "All" || item.category === selectedCategory) &&
-  (selectedColor === "" || item.color === selectedColor));
 
   //const filteredModels = selectedCategory === "All" && selectedColor
   //console.log(filteredModels);
@@ -49,46 +20,11 @@ const ModelViewer = () => {
   ) {
     return (
       <>
-        <section className="SectionStyle">
-        
-        <div>
-          <label htmlFor="category">Category:</label>
-          <select 
-            name="category" 
-            id="category"
-            value={selectedCategory}
-            onChange={handleCategoryChange}
-          >
-            <option value="">All</option>
-            <option value="Furniture">Furniture</option>
-            <option value="Art">Art</option>
-            <option value="Vehicle">Vehicle</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="color">Color:</label>
-              <select
-                name="color"
-                id="color"
-                value={selectedColor}
-                onChange={handleColorChange}
-              >
-                <option value="">All</option>
-                <option value="Blue">Blue</option>
-                <option value="Red">Red</option>
-                <option value="Orange">Orange</option>
-                <option value="Brown">Brown</option>
-                <option value="Multicolor">Multicolor</option>
-                
-              </select>    
-        </div>
-        <div><button onClick={clearFilter}>Clear Filter</button></div>
-        </section>
         <section className="Mobile1">
-        {filteredModels.map((item)=>(
+        {items.map((item)=>(
           <div key={item.id} className="Mobile">
             <model-viewer
-              style={modelViewer}
+              className= "model_Viewer"
               src={item.src}
               ios-src={item.iosSrc}
               alt="A 3D model of an astronaut"
@@ -113,56 +49,13 @@ const ModelViewer = () => {
   } else {
     return (
       <>
-        <nav className="navbarStyle">
-          <h1>AR-Webstore</h1>
-          <div>
-            <span><button>Sign In</button></span>
-            <span><button>Cart</button></span>
-          </div>
-        </nav>
-        <div style={{display:"flex"}}>
-        <section className="filterSectionStyle">
-        <h3>Filter Options</h3>
-        <div>
-          <label htmlFor="category">Category:</label>
-          <select 
-            name="category" 
-            id="category"
-            value={selectedCategory}
-            onChange={handleCategoryChange}
-          >
-            <option value="">All</option>
-            <option value="Furniture">Furniture</option>
-            <option value="Art">Art</option>
-            <option value="Vehicle">Vehicle</option>
-          </select>
-        </div>
-        <div>
-          <label htmlFor="color">Color:</label>
-              <select
-                name="color"
-                id="color"
-                value={selectedColor}
-                onChange={handleColorChange}
-              >
-                <option value="">All</option>
-                <option value="Blue">Blue</option>
-                <option value="Red">Red</option>
-                <option value="Orange">Orange</option>
-                <option value="Brown">Brown</option>
-                <option value="Multicolor">Multicolor</option>
-                
-              </select>    
-        </div>
-        <div><button onClick={clearFilter}>Clear Filter</button></div>
-        </section>
         <section className="filterSection1Style">
         <div className="container" >
-        {filteredModels.map((item) => (
+        {items.map((item) => (
         <div key={item.id} className="ContainerModel">
           <h1>{item.name}</h1>
           <model-viewer
-            style={modelViewer}
+            className="model_Viewer"
             src={item.src}
             ios-src={item.iosSrc}
             alt={`A 3D model of ${item.name}`}
@@ -170,8 +63,9 @@ const ModelViewer = () => {
             auto-rotate
             camera-controls
           ></model-viewer>
-          <div style={{ display: "flex" }}>
+          <div className="box1">
             <QRCode
+              className="qrCode"
               id={item.id}
               value={window.location.href}
               size={128}
@@ -180,7 +74,7 @@ const ModelViewer = () => {
               level={"H"}
               includeMargin={true}
             />
-            <div>
+            <div className="Text">
               <h5 style={{ marginTop: 30 }}>
                 Scan the QR code for AR View on mobile
               </h5>
@@ -191,8 +85,7 @@ const ModelViewer = () => {
       ))}
         </div> 
          
-        </section>
-        </div>        
+        </section>      
       </>
       
     );
