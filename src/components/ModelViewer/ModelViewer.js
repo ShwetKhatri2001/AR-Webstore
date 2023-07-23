@@ -29,8 +29,6 @@ const ModelViewer = () => {
     backgroundColor: "#eee",
     overflowX: "hidden",
     posterColor: "#eee",
-    width: "80vw",
-    margin:"0 auto",
     maxWidth: 250,
     height: 200,
     borderRadius: 15,
