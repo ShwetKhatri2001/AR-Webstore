@@ -21,7 +21,7 @@
 }
 .model-view {
   position: relative;
-  padding-bottom: 3.1rem;
+  padding-bottom: 3.1rem !important;
 }
 .add-icon {
   display: grid;
