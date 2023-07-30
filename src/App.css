@@ -19,6 +19,17 @@
   border: 1px solid #dadce0;
   cursor: pointer;
 }
+.model-view {
+  position: relative;
+  padding-bottom: 3.1rem !important;
+}
+.add-icon {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 1rem;
+}
 
 .arbutton:active {
   background-color: #e8eaed;
