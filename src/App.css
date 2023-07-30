@@ -99,7 +99,6 @@
   position: absolute;
   font-size: 10px;
   bottom: 22px;
-  right: 60%;
   background-color: rgba(0, 0, 0, 0.545);
   padding: 20% 20%;
   border-radius: 10px;
@@ -222,6 +221,10 @@
   font-weight: bold;
 }
 
+.fullscreen-btn span, .help-btn span {
+  right: -3.5rem;
+}
+
 .help-btn {
   top: 3.5rem;
   left: 1rem;
@@ -237,5 +240,8 @@
   .fullscreen-btn{
     top: unset;
     left: unset;
+  }
+  .fullscreen-btn span, .help-btn span {
+    right: 60%;
   }
 }
