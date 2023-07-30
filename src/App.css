@@ -221,3 +221,21 @@
   font-size: large;
   font-weight: bold;
 }
+
+.help-btn {
+  top: 3.5rem;
+  left: 1rem;
+}
+
+.fullscreen-btn {
+  top: 1rem;
+  left: 1rem;
+}
+
+@media (min-width: 35em) {  
+  .help-btn,
+  .fullscreen-btn{
+    top: unset;
+    left: unset;
+  }
+}
