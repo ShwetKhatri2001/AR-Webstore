@@ -135,15 +135,13 @@ For development and debugging, attach the device to your machine using a cable a
 
 <br>
 
-<table style="width:100%;background-color:white;border-radius:30px;">
-    <tr>
-     <td>
-      <centre>
-        <a href="https://gssoc.girlscript.tech/"><img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/a9f04517-1e99-4d6c-be13-05f02387fe7e"></img></a>
-      </centre>
-     </td>
-   </tr>
-</table>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
+    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+  </picture>
+</div>
 
 <a name="project-admin"></a>
 ## Project Admin
