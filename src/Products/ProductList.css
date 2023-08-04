@@ -1,4 +1,4 @@
-.body{
+/*.body{
   margin-top:100%;
 }
 .filterSection1Style {
@@ -80,6 +80,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-}
+}*/
 
-  
+.Card{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10px;
+}
+.model-view {
+  position: relative;
+  padding-bottom: 3.1rem !important;
+  margin-top: 2%;
+}
