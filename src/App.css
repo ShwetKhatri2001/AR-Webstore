@@ -22,9 +22,11 @@
 .model-view {
   position: relative;
   padding-bottom: 3.1rem !important;
+  margin-top: 2%;
 }
 .add-icon {
   display: grid;
+  justify-content: center;
   place-items: center;
   aspect-ratio: 1/1;
   position: absolute;
@@ -176,8 +178,8 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 1px;
   transition: all 0.7s;
-  margin: 0 auto;
-  width: 88%;
+  margin: 3%;
+  width: 25%;
   max-width: 700px;
 }
 .model-view:hover{
@@ -256,3 +258,4 @@
     right: 60%;
   }
 }
+

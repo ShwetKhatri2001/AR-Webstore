@@ -1,0 +1,96 @@
+/*.body{
+  margin-top:100%;
+}
+.filterSection1Style {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 60%;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 1%;
+  width: 100%;
+  min-height: 100%;
+  justify-content: flex-start;
+}
+
+.ContainerModel{
+  box-sizing: border-box;
+  background-color: rgb(242, 242, 242);
+  width: 45%;
+  height: 80%;
+  margin: 20px;
+  justify-self: center;
+  border: 1px solid rgb(38, 38, 40);
+} 
+
+.ContainerModel h1{
+  padding: 20px;
+  justify-self: center;
+  text-align: center;
+  background-color: rgb(198, 198, 198);
+  margin-top: 0px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.ContainerModel h5{
+  margin:5px;
+  justify-self: center;
+  text-align: center;
+}
+
+.qrCode{
+  margin: 2%;
+  margin-left: 2%;
+
+}
+
+.box1{
+  display: flex;
+  background-color: rgb(198, 198, 198);
+  margin-top: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.Text{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.ContainerModel model-viewer{
+  background-color: rgb(243, 240, 240);
+  width: 80%;
+  height: 500px;
+  border-radius: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10%;
+};
+.Mobile model-viewer{
+  margin-top: 100%;
+  border: 2px rgb(26, 25, 25);
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}*/
+
+.Card{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  margin-top: 10px;
+}
+.model-view {
+  position: relative;
+  padding-bottom: 3.1rem !important;
+  margin-top: 2%;
+}
