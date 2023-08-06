@@ -108,7 +108,6 @@ const ModelViewer = () => {
         
       </>
       
-      
     );
   } else {
     return (
@@ -167,9 +166,8 @@ const ModelViewer = () => {
             </div>
           ))}
         </section>
-      </>
-      
-      
+      </>    
+
     );
   }
 };
