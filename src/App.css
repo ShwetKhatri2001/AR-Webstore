@@ -45,6 +45,10 @@
   outline: 1px solid #4285f4;
 }
 
+.app-container {
+  margin-top: 190px;
+  margin-bottom: 100px;
+}
 
 .help-btn, 
 .fullscreen-btn {
