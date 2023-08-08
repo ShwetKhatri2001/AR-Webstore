@@ -3,7 +3,7 @@ import "@google/model-viewer/dist/model-viewer.min.js";
 import ModelViewer from "./components/ModelViewer/ModelViewer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Footer from "./components/Footer.js";
 const App = () => {
   return(      
   <BrowserRouter>
@@ -19,6 +19,7 @@ const App = () => {
             element={<ErrorPage/>}
           />
           </Routes>
+          <Footer/>
   </BrowserRouter>
   )
 };
