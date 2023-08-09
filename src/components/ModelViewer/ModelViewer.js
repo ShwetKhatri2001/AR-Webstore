@@ -112,7 +112,7 @@ const ModelViewer = () => {
   } else {
     return (
       <>
-        <section className="Card">
+        <section className="Card" style={{ width: '100%', height: '100%' }}>
           {items.map((item)=>(
             <div class="model-view" >
               <model-viewer 
