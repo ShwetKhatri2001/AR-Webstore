@@ -1,9 +1,6 @@
----
 name: Documentation Issue
 about: Report an issue with the project documentation
-title: "[Documentation] "
-
----
+title: "[Documentation]"
 
 body:
   - type: markdown

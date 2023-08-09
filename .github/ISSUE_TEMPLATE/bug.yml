@@ -39,7 +39,7 @@ body:
         - label: "I have checked the existing issues"
           required: true
 
-        - label: "I have read the [Contributing Guidelines](https://github.com/rupali-codes/LinksHub/blob/main/CONTRIBUTING.md)"
+        - label: "I have read the [Contributing Guidelines](https://github.com/ShwetKhatri2001/AR-Webstore/blob/master/CONTRIBUTING.md)"
           required: true
 
         - label: "I am willing to work on this issue (optional)"
