@@ -61,3 +61,9 @@ body:
         Thank you for contributing to our project's documentation! 
         Please make sure to review our CONTRIBUTING guidelines before submitting your issue.
         -->
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Additional Description
+      placeholder: Add any additional information here
