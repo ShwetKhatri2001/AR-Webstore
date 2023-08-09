@@ -1,67 +1,48 @@
----
-name: Documentation Issue
-about: Report an issue with the project documentation
-title: "[Documentation] "
-
----
+name: 📄 Documentation issue
+description: Found an issue in the documentation? You can use this one!
+title: "[DOCS] <description>"
+labels: ["documentation"]
 
 body:
-  - type: markdown
+  - type: textarea
+    id: description
     attributes:
-      value: |
-        <!--
-        Please follow the guidelines below to report documentation issues effectively.
-        -->
-        ### Issue Summary
-        **Description:**
-        A clear and concise description of the problem with the documentation or the improvement you'd like to suggest.
+      label: Description
+      description: A brief description of the question or issue, also include what you tried and what didn't work
+    validations:
+      required: true
 
-        **Severity:**
-        [ ] Low
-        [ ] Medium
-        [ ] High
-        [ ] Critical
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please add screenshots if applicable
+    validations:
+      required: true
 
-        **Affected Documentation Section:**
-        Specify the relevant section(s) or page(s) of the documentation where you encountered the issue.
+  - type: textarea
+    id: extrainfo
+    attributes:
+      label: Additional information
+      description: Please add screenshots if applicable
+    validations:
+      required: false
 
-        ### Expected Documentation
-        **Describe the expected content:**
-        If applicable, describe how you expected the documentation to be or provide examples of how it could be improved.
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Is there anything else we should know about this issue?
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+        - label: I'm a GSSoC'23 contributor
+        - label: I want to work on this issue
 
-        **Proposed Solution:**
-        Share your ideas for improving the documentation or propose a solution if you have one.
-
-        ### Reproduction Steps
-        **Steps to Reproduce:**
-        If the issue is related to inaccuracies or unclear instructions, provide the steps to reproduce the problem.
-
-        **Screenshots or Code Snippets:**
-        Attach any relevant screenshots or code snippets that illustrate the problem.
-
-        ### Environment Information
-        **Your Environment:**
-        - OS: [e.g., Windows, macOS, Linux]
-        - Browser: [e.g., Chrome, Firefox, Safari]
-        - Version: [e.g., 1.0.0]
-
-        **Additional Context:**
-        Add any other context or details that might be helpful for understanding the issue.
-
-        ### Related Documentation URLs
-        **Links:**
-        If relevant, provide any specific URLs or links to the documentation in question.
-
-        ### Contributor Checklist
-        Please make sure that you have considered the following before submitting this documentation issue:
-        - [ ] I have checked the project's existing documentation issues to ensure there are no duplicates.
-        - [ ] I have reviewed the project's CONTRIBUTING guidelines.
-        - [ ] I understand that submitting a documentation issue does not guarantee immediate updates.
-
-        ### Additional Notes
-        **Notes:**
-        Add any other notes or comments related to this documentation issue.
-        <!-- 
-        Thank you for contributing to our project's documentation! 
-        Please make sure to review our CONTRIBUTING guidelines before submitting your issue.
-        -->
+  
