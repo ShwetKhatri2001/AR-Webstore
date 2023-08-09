@@ -7,6 +7,7 @@ const BigDesktopError = () => {
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: '100vh',
+    background: '#f0f0f0',
     fontSize: '50px',
     color: 'red',
     fontWeight: 'bold',
