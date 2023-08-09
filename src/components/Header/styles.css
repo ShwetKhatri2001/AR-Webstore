@@ -1,0 +1,101 @@
+/* styles for header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 1rem;
+  position: inherit;
+}
+
+/* styles for navigation links */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* styles for mobile menu icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.mobile-menu-icon div {
+  width: 30px;
+  height: 3px;
+  padding-right: 40px;
+  background: #333;
+  margin-top: 5px;
+}
+
+/* styles for mobile sidebar */
+.mobile-sidebar {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background: #f0f0f0;
+  padding: 1rem;
+  z-index: 1001;
+}
+
+.mobile-sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Query for small screens */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .desktop-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .desktop-nav.hide {
+    display: none;
+  }
+
+  .mobile-sidebar {
+    display: block;
+  }
+
+  /* Align mobile menu items to the right in responsive view */
+  .mobile-sidebar ul {
+    justify-content: flex-end;
+  }
+}
