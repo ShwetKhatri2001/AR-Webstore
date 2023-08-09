@@ -1,3 +1,9 @@
+/* Colors */
+:root {
+  --primary-color: #3498db;
+  --background-color: #f0f0f0;
+}
+
 /* Reset and General Styles */
 body {
   margin: 0;
@@ -14,10 +20,12 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
 }
 
 /* Code Styling */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: var(--primary-color);
 }
