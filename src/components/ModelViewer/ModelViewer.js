@@ -3,6 +3,7 @@ import ioschair from "../../assets/models/sheenchair.usdz";
 import QRCode from "qrcode.react";
 import Help from "./Help";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 const ModelViewer = () => {
   const [display,setDisplay]=useState(false);
 
@@ -48,6 +49,7 @@ const ModelViewer = () => {
     navigator.userAgent.match(/Windows Phone/i)
   ) {
     return (
+      <>
       <div class="model-view">
       <model-viewer
       ref={model}
@@ -102,10 +104,14 @@ const ModelViewer = () => {
           +
         </div>
       </div>
-      
+      <button style={{marginTop:"20px", outline:"none"}}>
+        <Link to="/feedback">Feedback</Link>
+      </button>
+      </>
     );
   } else {
     return (
+      <>
       <div class="model-view" style={{ margin: 0 }} >
         <model-viewer 
         ref={model}
@@ -156,6 +162,10 @@ const ModelViewer = () => {
           +
         </div>  
       </div>
+      <button style={{marginTop:"20px", outline:"none"}}>
+        <Link to="/feedback">Feedback</Link>
+      </button>
+      </>
     );
   }
 };
