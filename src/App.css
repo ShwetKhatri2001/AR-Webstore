@@ -19,6 +19,29 @@
   border: 1px solid #dadce0;
   cursor: pointer;
 }
+.app-container{
+  margin-top: 200px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    margin-top: 550px;
+    margin-bottom: 15px;
+  }
+}
+.model-view {
+  position: relative;
+  padding-bottom: 3.1rem !important;
+  margin-top: 2%;
+}
+.add-icon {
+  display: grid;
+  justify-content: center;
+  place-items: center;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 1rem;
+}
 
 .arbutton:active {
   background-color: #e8eaed;
@@ -30,6 +53,12 @@
 
 .arbutton:focus-visible {
   outline: 1px solid #4285f4;
+}
+
+
+.help-btn, 
+.fullscreen-btn {
+  all: unset;
 }
 
 .help-component {
@@ -66,18 +95,25 @@
 }
 
 .help-btn {
-  position: absolute;
-  right: 25px;
+  background-color: rgba(0,0,0,.284);
   bottom: 19px;
-  font-size: 15px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.284);
-  border-radius: 100%;
+  right: 1.25rem;
   border: none;
+  border-radius: 100%;
+  color: #fff;
   cursor: pointer;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .2rem;
 }
 .help-btn:hover, .fullscreen-btn:hover {
-  background-image: radial-gradient(circle, #ff55b6, #e96cd0, #cf7fe1, #b48fec, #9c9cee, #88a9f6, #76b5f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-image: radial-gradient(circle, #ff55b6, #e96cd0, #cf7fe1, #b48fec, #9c9cee, #88a9f6, #76b5f9, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1) !important;
 }
 .help-btn span,
 .fullscreen-btn span {
@@ -86,7 +122,6 @@
   position: absolute;
   font-size: 10px;
   bottom: 22px;
-  right: 60%;
   background-color: rgba(0, 0, 0, 0.545);
   padding: 20% 20%;
   border-radius: 10px;
@@ -96,15 +131,23 @@
   display: block;
 }
 .fullscreen-btn {
-  position: absolute;
-  right: 55px;
-  bottom: 18px;
-  font-size: 15px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.284);
+  background-color: rgba(0,0,0,.284);
   border-radius: 100%;
-  border: none;
+  bottom: 18px;
+  color: #fff;
   cursor: pointer;
+  font-size: 15px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  right: 4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .225rem;
+  line-height: 0;
 }
 .fz {
   font-size: 35px;
@@ -145,8 +188,8 @@
   border-radius: 10px;
   box-shadow: 0 0 5px 1px;
   transition: all 0.7s;
-  margin: 0 auto;
-  width: 88%;
+  margin: 3%;
+  width: 25%;
   max-width: 700px;
 }
 .model-view:hover{
@@ -200,3 +243,30 @@
   font-size: large;
   font-weight: bold;
 }
+
+
+.fullscreen-btn span, .help-btn span {
+  right: -3.5rem;
+}
+
+.help-btn {
+  top: 3.5rem;
+  left: 1rem;
+}
+
+.fullscreen-btn {
+  top: 1rem;
+  left: 1rem;
+}
+
+@media (min-width: 35em) {  
+  .help-btn,
+  .fullscreen-btn{
+    top: unset;
+    left: unset;
+  }
+  .fullscreen-btn span, .help-btn span {
+    right: 60%;
+  }
+}
+
