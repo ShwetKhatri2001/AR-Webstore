@@ -3,9 +3,10 @@ import "@google/model-viewer/dist/model-viewer.min.js";
 import ModelViewer from "./components/ModelViewer/ModelViewer";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Feedback from "./components/Feedback/Feedback";
 import Footer from "./components/Footer.js";
 import Header from "./components/Header/Header"
+import Feedback from "./components/Feedback/Feedback"
+
 const App = () => {
   return(      
   <BrowserRouter>
@@ -23,7 +24,6 @@ const App = () => {
             path="*"
             element={<ErrorPage/>}
           />
-            Feedback
           <Route path="/feedback" element={<Feedback/>} />
           </Routes>
           <Footer/>
