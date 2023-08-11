@@ -43,11 +43,11 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/products"
+              to="/feedback"
               activeStyle={{ color: 'blue', textDecoration: 'underline' }}
               onClick={closeMobileSidebar}
             >
-              Products
+              Feedback
             </Link>
           </li>
           <li>
