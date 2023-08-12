@@ -1,0 +1,30 @@
+h1{
+    border-bottom: 8px black dotted;
+    padding-bottom: 5px;
+    width: max-content;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+.form-field textarea{
+    background-color: rgb(240, 240, 236);
+    border: none;
+    min-height: 100px;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+@media (max-width: 300px){
+    h1{
+        margin-top: 4%;
+        font-size: larger;
+    }
+    .form-field{
+        margin-top: 18px;
+    }
+}

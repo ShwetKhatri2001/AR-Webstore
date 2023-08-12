@@ -5,6 +5,8 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer.js";
 import Header from "./components/Header/Header"
+import Feedback from "./components/Feedback/Feedback"
+
 const App = () => {
   return(      
   <BrowserRouter>
@@ -22,6 +24,7 @@ const App = () => {
             path="*"
             element={<ErrorPage/>}
           />
+          <Route path="/feedback" element={<Feedback/>} />
           </Routes>
           <Footer/>
   </BrowserRouter>
