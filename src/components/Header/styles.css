@@ -32,13 +32,10 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  margin: 0 1rem;
-}
-
 nav a {
   color: #fff;
   text-decoration: none;
+  padding: 0 1rem;
   font-size: 1.1rem;
   font-weight: 600;
   transition: 0.5s all ease-in-out;
@@ -107,8 +104,8 @@ nav .project-title:hover {
     flex-direction: column;
   }
 
-  nav li {
-    margin: 0.5rem 0;
+  nav a {
+    padding: 0.5rem 0;
   }
 
   .mobile-menu-icon {
@@ -118,6 +115,8 @@ nav .project-title:hover {
   .desktop-nav {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
   .desktop-nav.hide {

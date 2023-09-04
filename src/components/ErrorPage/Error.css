@@ -8,11 +8,14 @@
   justify-content: center;
 }
 
-.err-container h1 {
+.err-container h1,
+.err-container h2 {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
   text-decoration: none;
+  text-align: center;
+  line-height: 50px;
 }
 
 .container a,

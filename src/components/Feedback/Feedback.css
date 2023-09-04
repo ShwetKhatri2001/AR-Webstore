@@ -21,7 +21,6 @@
 .container h1 {
   border-bottom: 4px black dotted;
   padding-bottom: 5px;
-  width: max-content;
 }
 
 @media (max-width: 300px) {

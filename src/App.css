@@ -39,11 +39,11 @@
   border-radius: 50%;
   color: white;
   font-weight: bold;
-  height: 2rem;
-  width: 2.5rem;
+  height: 35px;
+  width: 45px;
   cursor: pointer;
   transition: 0.5s;
-  font-size: 2rem;
+  font-size: 35px;
   padding-bottom: 10px;
   margin-left: auto;
 }

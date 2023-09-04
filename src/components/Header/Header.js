@@ -32,43 +32,36 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <ul className={`desktop-nav ${showMobileSidebar ? "hide" : ""}`}>
-          <li>
-            <Link
-              to="/"
-              // activeStyle={{ color: "blue", textDecoration: "underline" }}
-              onClick={closeMobileSidebar}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
-              target="_blank"
-              // activeStyle={{ color: "blue", textDecoration: "underline" }}
-              onClick={closeMobileSidebar}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/feedback"
-              // activeStyle={{ color: "blue", textDecoration: "underline" }}
-              onClick={closeMobileSidebar}
-            >
-              Feedback
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              // activeStyle={{ color: "blue", textDecoration: "underline" }}
-              onClick={closeMobileSidebar}
-            >
-              Contact Us
-            </Link>
-          </li>
+          <Link
+            to="/"
+            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+            onClick={toggleMobileSidebar}
+          >
+            Home
+          </Link>
+          <Link
+            to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
+            target="_blank"
+            onClick={toggleMobileSidebar}
+            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          >
+            About
+          </Link>
+
+          <Link
+            to="/feedback"
+            onClick={toggleMobileSidebar}
+            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          >
+            Feedback
+          </Link>
+          <Link
+            to="/contact"
+            onClick={toggleMobileSidebar}
+            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          >
+            Contact Us
+          </Link>
         </ul>
       </nav>
     </header>
