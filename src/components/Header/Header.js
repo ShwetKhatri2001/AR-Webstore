@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./styles.css";
 
 const Header = () => {
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
@@ -16,35 +16,45 @@ const Header = () => {
   return (
     <header>
       {/* Mobile Menu Icon */}
-      <div className="mobile-menu-icon" onClick={toggleMobileSidebar}>
-        <div />
-        <div />
-        <div />
-      </div>
-
       <nav>
-        <h3>
-          <Link to="/" onClick={closeMobileSidebar}>
-            AR Webstore
-          </Link>
-        </h3>
+        <div className="navtop">
+          <h3>
+            <Link to="/" onClick={closeMobileSidebar} className="project-title">
+              AR Webstore
+            </Link>
+          </h3>
+          <div className="mobile-menu-icon" onClick={toggleMobileSidebar}>
+            <div />
+            <div />
+            <div />
+          </div>
+        </div>
 
         {/* Desktop Navigation */}
-        <ul className={`desktop-nav ${showMobileSidebar ? 'hide' : ''}`}>
+        <ul className={`desktop-nav ${showMobileSidebar ? "hide" : ""}`}>
           <li>
-            <Link to="/" activeStyle={{ color: 'blue', textDecoration: 'underline' }} onClick={closeMobileSidebar}>
+            <Link
+              to="/"
+              // activeStyle={{ color: "blue", textDecoration: "underline" }}
+              onClick={closeMobileSidebar}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" activeStyle={{ color: 'blue', textDecoration: 'underline' }} onClick={closeMobileSidebar}>
+            <Link
+              to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
+              target="_blank"
+              // activeStyle={{ color: "blue", textDecoration: "underline" }}
+              onClick={closeMobileSidebar}
+            >
               About
             </Link>
           </li>
           <li>
             <Link
               to="/feedback"
-              activeStyle={{ color: 'blue', textDecoration: 'underline' }}
+              // activeStyle={{ color: "blue", textDecoration: "underline" }}
               onClick={closeMobileSidebar}
             >
               Feedback
@@ -53,7 +63,7 @@ const Header = () => {
           <li>
             <Link
               to="/contact"
-              activeStyle={{ color: 'blue' }}
+              // activeStyle={{ color: "blue", textDecoration: "underline" }}
               onClick={closeMobileSidebar}
             >
               Contact Us
