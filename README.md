@@ -2,10 +2,6 @@
 
 <div align="center">
 <p align="centre">
-  <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
-  <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
-  <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
-  <br>
   <img src="https://img.shields.io/github/issues-pr-closed-raw/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/issues-closed-raw/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
   <img src="https://img.shields.io/github/contributors/ShwetKhatri2001/AR-Webstore?style=for-the-badge" />
@@ -16,7 +12,7 @@
 ![AR-Webstore](https://socialify.git.ci/ShwetKhatri2001/AR-Webstore/image?description=1&descriptionEditable=Webstore%20of%20photorealistic%20%0A3D%20digital%20objects%20in%20AR%20&font=Source%20Code%20Pro&forks=1&issues=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 
 <div align="center">
-<h2><i><b>Hi 👋, Shwet here and welcome to AR-Webstore!</b></i></h2>
+<h2><i><b>Hi 👋, Shwet here and I welcome you to AR-Webstore!</b></i></h2>
 <h2><i><b>It's a web application to visualize photorealistic 3D objects in AR (Augmented Reality).</b></i></h2>
 </div>
 
@@ -46,7 +42,7 @@ Our AR-Webstore revolutionizes the shopping experience by seamlessly integrating
 
 <a id="current"></a>
 ## Current State of the Project
-It showcases a 3D photorealistic model of a chair in your own environment using augmented reality, where you can check each and every detail about the chair as if it were actually present in your room.
+It provides you a list of e-commerce products along with their 3D photorealistic models to try out them in a 360deg viewer. Also, you can view those products in your own environment using augmented reality, where you can check each and every detail of products like chairs, photo frames, and cars as if they were actually present in your room.
 </div>
 <a name="preview"></a>
 
@@ -55,10 +51,10 @@ It showcases a 3D photorealistic model of a chair in your own environment using 
 ## [Live Link](https://ar-webstore.netlify.app/)
 
 <div style="display:flex;">
-  <img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/328c2a53-4ac1-4016-ba4e-4e40499d6e45" 
-            alt="before" width="410"/>
+  <img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/0086f8a4-6f5e-4fcb-a2a8-da6e3c50a745" 
+            alt="before" height="450"/>
   <img src="https://github.com/ShwetKhatri2001/AR-Webstore/assets/56475750/e2593277-08c3-4344-9161-e9a36506eab6" 
-            alt="after" width="300"/>
+            alt="after" height="450"/>
 </div>
 <a name="goals"></a>
 
@@ -131,7 +127,7 @@ For development and debugging, attach the device to your machine using a cable a
 <a name="open-source"></a>
 ## 📌 Open source Programs
 
-### This project is a part of the following Open Source Program
+### This project has been a part of the following Open Source Programs
 
 <br>
 
