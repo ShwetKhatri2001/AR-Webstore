@@ -40,8 +40,8 @@ const Header = () => {
             Home
           </Link>
           <Link
-            to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
-            target="_blank"
+            to="/about"
+            // target="_blank"
             onClick={toggleMobileSidebar}
             // activeStyle={{ color: "blue", textDecoration: "underline" }}
           >
