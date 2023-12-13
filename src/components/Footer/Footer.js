@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="contact" id="contact">
       <div className="main-content">
-        <div class="contact-content">
+        <div className="contact-content">
           <Link to="/"> Home </Link>
           <Link
             to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
@@ -51,7 +51,7 @@ function Footer() {
         </div>
       </div>
 
-      <div class="action">
+      <div className="action">
         <form onSubmit={(event) => event.preventDefault()}>
           <input
             type="email"
@@ -62,7 +62,7 @@ function Footer() {
           <input type="submit" name="submit" value="Submit" required></input>
         </form>
       </div>
-      <div class="last">
+      <div className="last">
         <p>@ 2023 AR-Website | All Rights Reserved</p>
       </div>
     </div>
