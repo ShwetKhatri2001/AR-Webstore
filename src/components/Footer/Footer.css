@@ -6,6 +6,10 @@
 }
 
 .contact {
+  overflow-x: none ;
+  /* border: 2px solid blue ; */
+  /* width: 100vw;s */
+  width: 100%;
   padding: 50px 12%;
   background: var(--text-color);
 }
@@ -18,6 +22,7 @@
 }
 
 .contact-content a {
+
   color: var(--bg-color);
   display: block;
   font-size: var(--p-font);
@@ -63,15 +68,60 @@
   font-weight: 600;
   cursor: pointer;
 }
-.last {
-  width: 100%;
-  text-align: center;
-  padding: 17px;
-  opacity: 70%;
-}
-.last p {
+.last { width: 100vw;
+  padding: 50px 12%;
+  background: var(--text-color);
   color: white;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+@media screen and ( max-width : 1000px) {
+  .contact {
+    width: 76vw;
+    
+    /* border: 2px solid green;s */
+  }
+  .main-content {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap:initial;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
+  .action>form>:first-child{
+    text-align: center;
+  }
+  .last
+  {
+    width: 40vw;
+    padding: 0 10px;
+    margin:  0 auto;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .last>p{
+    /* border: 2px solid green; */
+    text-align: center;
+  }
+  
+
+}
+@media screen and ( max-width : 516px){
+  .main-content {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+  }
 }
