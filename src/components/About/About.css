@@ -1,0 +1,71 @@
+/* Basic CSS Styles for the About Us Page */
+
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.headerp {
+    font-size: 1.2em;
+    color: #666;
+}
+
+section {
+
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.problem,
+.solution {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+}
+#resources li{
+margin-bottom: 20px;
+}
+.contributor img{
+    width: 90vw;
+
+}
+
+.admin-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 0px;
+}
+
+.dot{
+    display: inline-block;
+    border: 5px solid black;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+}
+.height{
+    height: 10px;
+}
+p{
+    margin-left: 15px;
+}
