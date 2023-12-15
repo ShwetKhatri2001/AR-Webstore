@@ -122,6 +122,7 @@
 .help-btn:hover span,
 .fullscreen-btn:hover span {
   display: block;
+  width: 55px;
 }
 .fullscreen-btn {
   background-color: rgba(0, 0, 0, 0.284);
