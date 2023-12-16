@@ -2,8 +2,9 @@
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 2rem;
   margin-bottom: 2rem;
   place-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
