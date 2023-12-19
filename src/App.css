@@ -205,7 +205,7 @@
 .help-btn span {
   right: -3.5rem;
 }
-
+/* 
 .help-btn {
   top: 4rem;
   left: 1rem;
@@ -215,7 +215,7 @@
   top: 1rem;
   left: 1rem;
 }
-
+ */
 
 /*----------- Responsiveness ---------- */
 @media (max-width: 912px) {
@@ -239,10 +239,14 @@
   }
 }
 @media (max-width: 560px) {
-  .help-btn,
+  .help-btn {
+    top: 4rem;
+    left: 1rem;
+  }
+  
   .fullscreen-btn {
-    top: unset;
-    left: unset;
+    top: 1rem;
+    left: 1rem;
   }
   .fullscreen-btn span,
   .help-btn span {
@@ -251,10 +255,13 @@
 }
 
 @media (max-width: 430px) {
-  .help-btn,
+  .help-btn {
+    top: 4rem;
+    left: 1rem;
+  }
   .fullscreen-btn {
-    top: unset;
-    left: unset;
+    top: 1rem;
+    left: 1rem;
   }
   .fullscreen-btn span,
   .help-btn span {
@@ -284,10 +291,13 @@
     padding: 0 10px;
     margin-top: 20px;
   } */
-  .help-btn,
+  .help-btn {
+    top: 4rem;
+    left: 1rem;
+  }
   .fullscreen-btn {
-    top: unset;
-    left: unset;
+    top: 1rem;
+    left: 1rem;
   }
   .fullscreen-btn span,
   .help-btn span {
@@ -304,16 +314,19 @@
     width: 96vw;
     height: 60vh;
   }
+  .help-btn {
+    top: 4rem;
+    left: 1rem;
+  }
+  .fullscreen-btn {
+    top: 1rem;
+    left: 1rem;
+  }
   .qr-sec {
     flex-direction: row;
     align-items: center;
     padding: 0 10px;
     margin-top: 20px;
-  }
-  .help-btn,
-  .fullscreen-btn {
-    top: unset;
-    left: unset;
   }
   .fullscreen-btn span,
   .help-btn span {
@@ -325,14 +338,17 @@
 }
 
 @media (max-width: 280px){
-  .help-btn,
+  .help-btn {
+    top: 4rem;
+    left: 0.5rem;
+  }
   .fullscreen-btn {
-    top: unset;
-    left: unset;
+    top: 1rem;
+    left: 0.5rem;
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    right: 50%;
   }
   .model-view{
     width: 90vw;
