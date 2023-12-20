@@ -1,27 +1,31 @@
 /* styles for header */
+:root{
+  --Bg : #000;
+  --text: #fff;
+
+}
 header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #000;
+  background:var(--Bg);
+  display: flex;
   padding: 1rem;
   position: inherit;
 }
 
 /* styles for navigation links */
 nav {
+  align-items: center;
+  color: var(--text);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
-  color: #fff;
 }
 
 nav .navtop {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   width: fit-content;
 }
 
@@ -33,11 +37,11 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0 1rem;
+  color: var(--text);
   font-size: 1.1rem;
   font-weight: 600;
+  padding: 0 1rem;
+  text-decoration: none;
   transition: 0.5s all ease-in-out;
 }
 
@@ -56,28 +60,36 @@ nav .project-title:hover {
 
 /* styles for mobile menu icon */
 .mobile-menu-icon {
-  display: none;
   cursor: pointer;
-  margin-right: 2rem;
+  display: none;
 }
 
 .mobile-menu-icon div {
+  background: var(--text);
+  border-radius: 0.5rem;
   height: 3px;
-  padding-right: 40px;
-  background: #fff;
-  margin-top: 5px;
+  transition: transform 0.3s ease;
+  width: 2rem;
+}
+
+.active div:nth-child(1) {
+  transform: rotate(45deg) translateX(1px) translateY(2px);
+}
+
+.active div:nth-child(2) {
+  transform: rotate(-45deg);
 }
 
 /* styles for mobile sidebar */
 .mobile-sidebar {
+  background: var(--text);
   display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70%;
   height: 100%;
-  background: #fff;
   padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 70%;
   z-index: 3;
 }
 
@@ -93,7 +105,9 @@ nav .project-title:hover {
   }
 
   nav {
+    box-sizing: border-box;
     flex-direction: column;
+    padding: 0 0.5rem;
   }
 
   nav .navtop {
@@ -109,14 +123,23 @@ nav .project-title:hover {
   }
 
   .mobile-menu-icon {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+  }
+
+  .active {
+    row-gap: 0;
   }
 
   .desktop-nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    width: 100%;
+    border-top: 2px solid #222;
+    box-sizing: border-box;
+    margin-top: .25rem;
   }
 
   .desktop-nav.hide {
@@ -130,5 +153,6 @@ nav .project-title:hover {
   /* Align mobile menu items to the right in responsive view */
   .mobile-sidebar ul {
     justify-content: flex-end;
+    
   }
 }
