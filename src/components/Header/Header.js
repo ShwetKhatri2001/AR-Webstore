@@ -23,9 +23,9 @@ const Header = () => {
               AR Webstore
             </Link>
           </h3>
-          <div className="mobile-menu-icon" onClick={toggleMobileSidebar}>
+          <div className={`mobile-menu-icon ${!showMobileSidebar ? "active" :""}`} onClick={toggleMobileSidebar}>
             <div />
-            <div />
+            {showMobileSidebar && <div />}
             <div />
           </div>
         </div>
