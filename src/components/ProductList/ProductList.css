@@ -6,5 +6,7 @@
   margin-bottom: 2rem;
   place-items: center;
   justify-content: center;
+  background: #cad5de;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
+

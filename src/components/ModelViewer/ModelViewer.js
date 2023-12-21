@@ -32,7 +32,7 @@ const ModelViewer = ({ item }) => {
   }, []);
 
   const modelViewer1 = {
-    backgroundColor: "#eee",
+    backgroundColor: " #ecf0f3", 
     overflowX: "hidden",
     posterColor: "#eee",
     width: "100%",

@@ -60,6 +60,7 @@ function Footer() {
             required
           ></input>
           <input type="submit" name="submit" value="Submit" required></input>
+        
         </form>
       </div>
       <div class="last">

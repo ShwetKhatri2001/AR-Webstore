@@ -70,7 +70,8 @@
 }
 .single {
   padding-left: 1rem;
-  color: rgb(219, 216, 216);
+  /* color: rgb(219, 216, 216); */
+  color: #000;
 }
 .single p {
   font-size: 12px;
