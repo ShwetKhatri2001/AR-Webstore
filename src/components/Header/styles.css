@@ -81,10 +81,6 @@ a:hover::before
  height: 2px;
  width: 90%;
 }
-/* 
-nav a:hover {
-  color: #e75a02;
-} */
 
 nav .project-title {
   font-size: 1.5rem;
