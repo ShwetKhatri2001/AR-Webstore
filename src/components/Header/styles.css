@@ -18,12 +18,12 @@ header {
   background:none !important;
 }
 ::-webkit-scrollbar-thumb {
-  background:#fd4520;
+  background: #2d4059; 
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:rgba(255, 51, 51, 0.925)
+  background: #2d4059; 
 }
 /* styles for navigation links */
 nav {
@@ -58,10 +58,10 @@ nav a {
   text-decoration: none;
   transition: 0.5s all ease-in-out;
 }
-
+/* 
 nav a:hover {
   color: #e75a02;
-}
+} */
 
 nav .project-title {
   font-size: 1.5rem;
