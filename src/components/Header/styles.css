@@ -18,12 +18,12 @@ header {
   background:none !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2d4059; 
+  background: #68707a; 
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2d4059; 
+  background: #68707a; 
 }
 /* styles for navigation links */
 nav {
