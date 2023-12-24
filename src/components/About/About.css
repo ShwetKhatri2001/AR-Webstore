@@ -1,71 +1,208 @@
-/* Basic CSS Styles for the About Us Page */
 
-*{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-.headerp {
-    font-size: 1.2em;
-    color: #666;
-}
-
-section {
-
-    margin-top: 30px;
-}
-
-h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 1.4em;
-    margin-bottom: 5px;
-}
-
-.problem,
-.solution {
-    margin-bottom: 20px;
-}
-
-a {
-    color: #007bff;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f4f4f4;
-}
-#resources li{
-margin-bottom: 20px;
-}
 .contributor img{
     width: 90vw;
 
 }
 
-.admin-img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    margin-left: 0px;
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.about-banner{
+    background-image: url('./bg5.jpg');
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    
+    
 }
 
-.dot{
-    display: inline-block;
-    border: 5px solid black;
-    height: 1px;
-    width: 1px;
-    border-radius: 50%;
+.about-banner-front{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    justify-content: space-between;
 }
-.height{
-    height: 10px;
+.about-banner-heading{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: -30vh;
+    padding: 0;
+  
+  
+    
+    
 }
-p{
-    margin-left: 15px;
+.aboutleft{
+    width:55%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutleftsec{
+   
+    font-size: 4.5rem;
+    color: white;
+    margin: 0;
+}
+.abouleftseccont{
+    font-size: 1.9rem;
+    color: white;
+    margin: 2% 2% 0 38%;
+    width: 80%;
+}
+.aboutrightsec{
+    height: 80%;
+    margin: 5% 10% 0 0;
+}
+.second-head{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 5vh 0;
+}
+.prob-box{
+    display: flex;
+    margin: 2vh 20vh;
+    padding: 5vh;
+    justify-content: space-between;
+}
+.prob-img{
+    margin: 0 5vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    cursor: pointer;
+}
+.about-prob-header{
+    
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.about-prob-sol{
+    margin: 1vh 8vh;
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 100%;
+    line-height:2.8rem;
+}
+.about-prob-sol2{
+    margin: 1vh 1vh 0 0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    width: 90%;
+    line-height:2.8rem;
+}
+.prob-img2{
+    margin-left:1vh;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    cursor: pointer;
+}
+.prob-box2{
+    display: flex;
+    margin: 2vh 10vh;
+    padding: 1vh;
+    justify-content: space-between;
+}
+.about-goals-box{
+    display: flex;
+    margin: 5vh 0;
+    padding: 5vh;
+    background:url('bg2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+}
+.status{
+    margin: 5vh;
+    padding: 4vh;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background: rgba(245, 235, 235, 0.397);
+    cursor: pointer;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    width: 50%;
+}
+.status-points{
+    color: white;
+    font-size: 1.8rem;
+    
+}
+.status-header{
+   
+    font-size: 3rem !important;
+    text-align: center;
+}
+.learning-about{
+    margin: 2vh auto;
+    display: block;
+    padding: 5vh;
+    font-size: 2rem;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    width: 80%;
+    line-height: 3rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+
+}
+.about-res-ul{
+    display: flex;
+    padding: 2vh;
+    list-style-type: none;
+
+}
+li:hover{
+    transform: scale(1.01);
+   
+}
+a:visited{
+    color: none;
+}
+.res1-img{
+    width: 93%;
+    margin: 0 1vh;
+}
+.a-res1:hover{
+text-decoration: none;
+}
+.about-admin-box{
+    display: flex;
+    width: 30%;
+    padding: 5vh;
+    background-color: rgb(218, 225, 225);
+    border-radius:10px;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    margin: 5vh auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-admin-img{
+    border-radius: 20px;
+    height: 20vh;
+    display: block!important;
+    margin: 0 5vh 0 0vh !important;
+   
+    
+}
+.about-admin{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: black;
+}
+a:visited{
+    text-decoration: none;
 }
