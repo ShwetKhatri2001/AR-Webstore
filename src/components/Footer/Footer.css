@@ -35,8 +35,17 @@
   text-decoration: underline;
 }
 
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
 .action form {
-  text-align: center;
+  display:  flex ;
+  justify-content:  center;
+  align-items: center;
+  gap:0 1rem;
 }
 
 .action form input[type="email"] {
@@ -46,7 +55,7 @@
   background: #222;
   border: none;
   outline: none;
-  margin: 0px 10px 20px 0;
+
   color: var(--bg-color);
   font-size: 16px;
   font-weight: 600;
@@ -57,21 +66,133 @@
   background: var(--bg-color);
   border: none;
   outline: none;
-  margin: 0px 10px 20px 0;
+
   color: var(--text-color);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
 }
+
 .last {
   width: 100%;
   text-align: center;
   padding: 17px;
   opacity: 70%;
 }
+
 .last p {
   color: white;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
+}
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --main-font: 2.2rem;
+  --p-font: 1.1rem;
+}
+
+.contact {
+  padding: 50px 12%;
+  background: var(--text-color);
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-content a {
+  color: var(--bg-color);
+  display: block;
+  font-size: var(--p-font);
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: all 0.5s ease-in-out;
+  list-style: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  width: fit-content;
+  margin-right: auto;
+}
+
+.contact-content a:hover {
+  text-decoration: underline;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.action form {
+  display:  flex ;
+  justify-content:  center;
+  align-items: center;
+  gap:0 1rem;
+}
+
+.action form input[type="email"] {
+  width: 460px;
+  max-width: 100%;
+  padding: 12px 15px;
+  background: #222;
+  border: none;
+  outline: none;
+
+  color: var(--bg-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.action form input[type="submit"] {
+  padding: 12px 30px;
+  background: var(--bg-color);
+  border: none;
+  outline: none;
+
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.last {
+  width: 100%;
+  text-align: center;
+  padding: 17px;
+  opacity: 70%;
+}
+
+.last p {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+
+@media (max-width :450px) {
+  .action {
+    width: 100%;
+  }
+
+  .action form input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .action form {
+    flex-direction: column;
+    gap: 1rem 0;
+    width: 100%;
+  }
+  .action form input[type="submit"]{
+    width: 100%;
+  }
 }
