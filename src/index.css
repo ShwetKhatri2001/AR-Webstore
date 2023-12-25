@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
+  background-color:#e3e8ed;
 }
 
 #root {

@@ -2,7 +2,6 @@
 :root{
   --Bg : #000;
   --text: #fff;
-
 }
 header {
   align-items: center;
@@ -11,7 +10,21 @@ header {
   padding: 1rem;
   position: inherit;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background:none !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #68707a; 
+  border-radius: 8px;
+}
 
+::-webkit-scrollbar-thumb:hover {
+  background: #68707a; 
+}
 /* styles for navigation links */
 nav {
   align-items: center;
@@ -19,6 +32,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  
 }
 
 nav .navtop {
@@ -43,10 +57,29 @@ nav a {
   padding: 0 1rem;
   text-decoration: none;
   transition: 0.5s all ease-in-out;
+  position: relative;
 }
 
-nav a:hover {
-  text-decoration: underline;
+ a::before
+{
+ content: "";
+ background-color:  #c4c1e0;
+ position: absolute;
+ left: 0;
+ bottom: -0.3rem;
+ height: 2px;
+ width: 0;
+ transition: 0.3s ease-in-out;
+}
+a:hover::before
+{
+  content: "";
+  background-color: #c4c1e0;
+ position: absolute;
+ left: 0;
+ bottom: -0.3rem;
+ height: 2px;
+ width: 90%;
 }
 
 nav .project-title {
