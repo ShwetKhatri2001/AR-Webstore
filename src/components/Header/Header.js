@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import logo from '../../assets/logo.png';
 
 const Header = () => {
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
@@ -13,16 +14,22 @@ const Header = () => {
     setShowMobileSidebar(false);
   };
 
+  const logoStyle = {
+    width: '70px',  // Set the width as needed
+    height: 'auto',  // Maintain the aspect ratio
+  };
+
+
   return (
     <header>
       {/* Mobile Menu Icon */}
       <nav>
         <div className="navtop">
-          <h3>
+            <img src= {logo} alt="My Logo" style={logoStyle}  />
+         {/* <h3>
             <Link to="/" onClick={closeMobileSidebar} className="project-title">
-              AR Webstore
-            </Link>
-          </h3>
+            </Li nk>
+          </h3> */}
           <div className={`mobile-menu-icon ${!showMobileSidebar ? "active" :""}`} onClick={toggleMobileSidebar}>
             <div />
             {showMobileSidebar && <div />}
@@ -37,6 +44,7 @@ const Header = () => {
             // activeStyle={{ color: "blue", textDecoration: "underline" }}
             onClick={toggleMobileSidebar}
           >
+      
             Home
           </Link>
           <Link

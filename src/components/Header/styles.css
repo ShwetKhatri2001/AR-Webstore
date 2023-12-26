@@ -42,7 +42,10 @@ nav .navtop {
   justify-content: space-between;
   width: fit-content;
 }
-
+nav img
+{
+  cursor: pointer;
+}
 nav ul {
   display: flex;
   list-style-type: none;
