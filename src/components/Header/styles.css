@@ -84,7 +84,10 @@ a:hover::before
  height: 2px;
  width: 90%;
 }
-
+nav .navtop h3
+{
+  cursor: pointer;
+}
 nav .project-title {
   font-size: 1.5rem;
   font-weight: bold;

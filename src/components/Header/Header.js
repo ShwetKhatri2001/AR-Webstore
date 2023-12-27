@@ -26,10 +26,11 @@ const Header = () => {
       <nav>
         <div className="navtop">
             <img src= {logo} alt="My Logo" style={logoStyle}  />
-         {/* <h3>
-            <Link to="/" onClick={closeMobileSidebar} className="project-title">
-            </Li nk>
-          </h3> */}
+         <h2>
+            AR Webstore
+            {/* <Link to="/" onClick={closeMobileSidebar} className="project-title">
+            </Link> */}
+          </h2>
           <div className={`mobile-menu-icon ${!showMobileSidebar ? "active" :""}`} onClick={toggleMobileSidebar}>
             <div />
             {showMobileSidebar && <div />}
