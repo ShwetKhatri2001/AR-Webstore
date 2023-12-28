@@ -185,9 +185,6 @@ a:visited{
     text-decoration: none;
 }
 @media only screen and (max-width:768px){
-    *{
-        font-size: 62.5%;
-    }
     .aboutrightsec{
         
         display: none;
