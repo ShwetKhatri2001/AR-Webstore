@@ -87,7 +87,6 @@ const About = () => {
                   <img className="res1-img" src={res1}/></a></li>
 
                    <li><a><iframe className='yt-res' width="600" height="405" src="https://www.youtube.com/embed/gAzIkjkJSzM?si=66Slz3nUzBZC-b5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a></li>
-                   <li><a><iframe className='yt-res' width="600" height="405" src="https://www.youtube.com/embed/gAzIkjkJSzM?si=66Slz3nUzBZC-b5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a></li>
 
                 </ul>
             </div>
