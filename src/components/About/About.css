@@ -201,3 +201,98 @@ text-decoration: none;
 a:visited{
     text-decoration: none;
 }
+@media only screen and (max-width:768px){
+  *{
+    font-size: 62.5%;
+  }
+    .aboutrightsec{
+        
+        display: none;
+    }
+    .aboutleft{
+        width: 100%;
+        margin: auto;
+    }
+    .aboutleftsec{
+        margin: 5vh auto;
+        width: 90%;
+        text-align: center;
+
+    }
+    .abouleftseccont{
+        margin: 0;
+        width: 90%;
+        text-align: center;
+    }
+    .prob-box{
+        flex-direction:column ;
+        margin: 4vh auto;
+        /* text-align: center; */
+    }
+    .about-prob-header{
+        margin: 2vh auto;
+    }
+    .about-prob-sol{
+        margin: 1vh auto;
+        display: block;
+    }
+    .prob-box2{
+        flex-direction:column-reverse ;
+        margin: 4vh auto;
+    }
+    .prob-img2{
+        width: 90%;
+        display: block;
+        margin : 2vh auto;
+        }
+        .about-prob-sol2{
+            width: 95%;
+           margin: 0;
+            text-align: center;}
+            .about-goals-box{
+                flex-direction: column;
+                font-size: 55%;
+                width: 100%;
+                padding: 0;
+                
+            }
+            .status{
+             width: 75%;
+             margin:4vh auto;
+
+            }
+            .learning-about{
+                margin: 2vh auto;
+    display: block;
+    padding: 2vh;
+    font-size: 1.5rem;
+    width: 90%;
+
+  
+            }
+            .about-res-ul{
+                 flex-direction: column;
+                 width: 90%;
+                 padding: 2vh;
+            }
+            .yt-res{
+                width: 90%;
+                margin: 2vh auto;
+                display: block;
+            }
+            .about-admin-box{
+                      width: 80%;
+                      flex-direction: column;
+                      font-size: 2rem;
+            }
+            .contributor img {
+                width: 90vw;
+                height: 90%;
+                margin: 5vh auto;
+            }
+            
+.second-head {
+    font-size: 2rem;
+    margin: 5vh 0 0 0;
+}
+}
