@@ -14,7 +14,9 @@
     height: 100%;
     width: 100%;
     margin: auto;
+    position: relative;
     display: flex;
+    align-items: center;
     backdrop-filter: blur(3px);
     border-radius: 50px;
     justify-content: space-between;
@@ -49,6 +51,24 @@
 .aboutrightsec{
     height: 80%;
     margin: 5% 10% 0 0;
+    transform: translateX(100%);
+    animation: flyIn 4s ease-in-out forwards;
+}
+@keyframes flyIn {
+    0%{
+        transform: translateX(100%)
+    }
+    50% {
+        transform: translateX(-50%);
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: scale(1.1); 
+    }
+    100%{
+        transform: translateX(10%);
+        transform: rotate(5deg);
+    }
 }
 .second-head{
     font-size: 2.5rem;
