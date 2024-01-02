@@ -14,7 +14,7 @@ const About = () => {
             <div className="about-banner-front"> 
             <div className="aboutleft"><div className="aboutleftsec">AR Webstore</div>
             <p className="abouleftseccont">A web application for immersive augmented reality shopping experiences.</p></div>
-            
+
             <img src={gun} className="aboutrightsec"/>
            
            
@@ -58,7 +58,7 @@ const About = () => {
                     <div style={{"display":"flex"}}><img style={{"height":"40px","display":"block","margin":"4vh 2vh 0 0"}}src={tick} /><p className="status-points">Augmented reality for in-home product exploration.</p></div>
                 </div>
                 <div className="status">
-                <h1 className="status-header" style={{"color":"rgb(9, 16, 250)"}}>Future Goals</h1>
+                <h1 className="status-header" style={{"color":"yellow"}}>Future Goals</h1>
                     <div style={{"display":"flex"}}><img style={{"height":"40px","display":"block","margin":"4vh 2vh 0 0"}}src={archery} /><p className="status-points">Build an e-commerce platform providing an immersive shopping experience.</p></div>
                     <div style={{"display":"flex"}}><img style={{"height":"40px","display":"block","margin":"4vh 2vh 0 0"}}src={archery} /><p className="status-points">Make the products interactive in a real environment rather than just demonstrating static 
                      3D models using ML-AI.</p></div>
@@ -81,7 +81,7 @@ const About = () => {
                  No no! Don't worry about some top of the world words mentioned above, 
                 the project is completely beginner friendly 😅 !But if you give your best, 
                 then you can really learn and build something out of the box for the future while working on this project, 
-                which I can ensure 😎!.<p style={{"color":"yellow"}}><i>Find some helpful resources below to start your journey in XR.</i></p>
+                which I can ensure 😎!.<p style={{"color":"white"}}><i>Find some helpful resources below to start your journey in XR.</i></p>
                 <ul className="about-res-ul">
                   <li><a  href="https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92">
                   <img className="res1-img" src={res1}/></a></li>

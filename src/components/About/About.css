@@ -132,12 +132,12 @@
     display: block;
     padding: 5vh;
     font-size: 2rem;
-    background-color: rgb(21, 21, 21);
-    color: white;
+    background-color:black;
+    color: lightgrey;
     width: 80%;
     line-height: 3rem;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    box-shadow: 5px 5px 4px rgb(50, 50, 50);
 }
 .about-res-ul{
     display: flex;
