@@ -41,14 +41,16 @@
     font-size: 4.5rem;
     color: white;
     margin: 0;
+    opacity: 0;
 }
 .abouleftseccont{
     font-size: 1.9rem;
     color: white;
     margin: 2% 2% 0 38%;
     width: 80%;
+    opacity: 0;
 }
-.aboutrightsec{
+.aboutrightsec.active{
     height: 80%;
     margin: 5% 10% 0 0;
     transform: translateX(100%);
@@ -73,7 +75,8 @@
 .second-head{
     font-size: 2.5rem;
     text-align: center;
-    margin: 5vh 0;
+    margin: 7vh 0;
+    opacity: 0;
 }
 .prob-box{
     display: flex;
@@ -86,6 +89,7 @@
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgb(50, 50, 50);
     cursor: pointer;
+    transform: translateX(100%)
 }
 .about-prob-header{
     text-align: center;
@@ -113,6 +117,7 @@
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgb(50, 50, 50);
     cursor: pointer;
+    transform: translateX(-100%)
 }
 .prob-box2{
     display: flex;
@@ -122,6 +127,7 @@
 }
 .about-goals-box{
     display: flex;
+    justify-content: center;
     margin: 5vh 0;
     padding: 5vh;
     background:url('bg2.jpg');
@@ -137,32 +143,34 @@
     background: rgba(245, 235, 235, 0.397);
     cursor: pointer;
     box-shadow: 4px 4px 4px rgb(50, 50, 50);
-    width: 50%;
+    width: 30%;
 }
 .status-points{
     color: white;
-    font-size: 1.8rem;   
+    font-size: 1.4rem;   
 }
 .status-header{
-    font-size: 3rem !important;
+    font-size: 2rem !important;
     text-align: center;
 }
 .learning-about{
-    margin: 2vh auto;
+    margin: 1.5vh 2vh;
     display: block;
-    padding: 5vh;
-    font-size: 2rem;
+    padding: 1vh 4vh;
+    font-size: 1.1rem;
     background-color: rgb(21, 21, 21);
     color: white;
-    width: 80%;
+    width: 40%;
     line-height: 3rem;
     border-radius: 15px;
     box-shadow: 4px 4px 4px rgb(50, 50, 50);
 }
 .about-res-ul{
     display: flex;
-    padding: 2vh;
+    padding: 0vh;
     list-style-type: none;
+    flex-direction: column;
+    align-items: center;
 }
 li:hover{
     transform: scale(1.01);  
@@ -172,6 +180,7 @@ a:visited{
 }
 .res1-img{
     width: 93%;
+    height: 70%;
     margin: 0 1vh;
 }
 .a-res1:hover{
@@ -179,14 +188,18 @@ text-decoration: none;
 }
 .about-admin-box{
     display: flex;
-    width: 30%;
-    padding: 5vh;
+    width: 27%;
+    padding: 4vh;
     background-color: rgb(218, 225, 225);
     border-radius:10px;
     box-shadow: 4px 4px 4px rgb(50, 50, 50);
     margin: 5vh auto;
     justify-content: space-evenly;
     align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+.about-admin-box:hover{
+    transform: scale(0.97) ;
 }
 .about-admin-img{
     border-radius: 20px;
@@ -198,7 +211,7 @@ text-decoration: none;
     text-align: center;
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     color: black;
 }
 a:visited{
@@ -290,5 +303,61 @@ a:visited{
     .second-head {
         font-size: 2rem;
         margin: 5vh 0 0 0;
+    }
+}
+
+.contributor{
+    margin: 4vh 2vh;
+}
+.learning-about-block{
+    display: flex;
+}
+.fade-effect{
+    opacity: 0;
+}
+
+.fromtop-anim.active{
+    transform: translateY(-80%);
+    animation: slideIn 3s ease forwards;
+}
+
+.fade-effect.active{
+    animation: fadeIn 3s ease forwards;
+}
+
+.left-img-effect.active{
+    transform: translateX(50%);
+    animation: flyImgleft 2s ease-in-out forwards;
+}
+.right-img-effect.active{
+    transform: translateX(50%);
+    animation: flyImgright 2s ease-in-out forwards;
+}
+
+@keyframes flyImgleft {
+    0%{
+        transform: translateX(100%)
+    }
+    100%{
+        transform: scale(1.1); 
+    }
+}
+@keyframes flyImgright {
+    0%{
+        transform: translateX(-100%)
+    }
+    100%{
+        transform: scale(1.1); 
+    }
+}
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }

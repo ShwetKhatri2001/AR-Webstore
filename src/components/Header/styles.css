@@ -109,9 +109,9 @@ nav .project-title:hover {
   transform: rotate(45deg) translateX(1px) translateY(2px);
 }
 
-.active div:nth-child(2) {
+/* .active div:nth-child(2) {
   transform: rotate(-45deg);
-}
+} */
 
 /* styles for mobile sidebar */
 .mobile-sidebar {
