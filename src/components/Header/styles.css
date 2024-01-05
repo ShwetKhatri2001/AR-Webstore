@@ -7,7 +7,7 @@ header {
   align-items: center;
   background:var(--Bg);
   display: flex;
-  padding: 1rem;
+  padding: .8rem;
   position: inherit;
 }
 ::-webkit-scrollbar {
