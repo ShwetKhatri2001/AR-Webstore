@@ -9,7 +9,6 @@
     
     
 }
-
 .about-banner-front{
     height: 100%;
     width: 100%;
@@ -132,31 +131,49 @@
     display: block;
     padding: 5vh;
     font-size: 2rem;
-    background-color: rgb(21, 21, 21);
-    color: white;
+    background-color:black;
+    color: lightgrey;
     width: 80%;
     line-height: 3rem;
     border-radius: 15px;
-    box-shadow: 4px 4px 4px rgb(50, 50, 50);
+    box-shadow: 5px 5px 4px rgb(50, 50, 50);
 }
-.about-res-ul{
+.about-res-ul {
     display: flex;
+    flex-wrap: wrap; 
     padding: 2vh;
     list-style-type: none;
 }
-li:hover{
-    transform: scale(1.01);  
+
+li {
+    margin: 10px;
+    flex: 1; 
+    max-width: calc(50% - 20px); 
+    box-sizing: border-box;
 }
-a:visited{
-    color: none;
+
+li:hover {
+    transform: scale(1.01);
 }
-.res1-img{
-    width: 93%;
-    margin: 0 1vh;
+
+a:visited {
+    color: inherit; /* Keep the link color the same as the default color */
 }
-.a-res1:hover{
-text-decoration: none;
+
+.res1-img {
+    width: 100%;
+    height: auto;
 }
+
+.a-res1:hover {
+    text-decoration: none;
+}
+
+.yt-res {
+    width: 83vh;
+    height: 46vh;
+}
+
 .about-admin-box{
     display: flex;
     width: 30%;
