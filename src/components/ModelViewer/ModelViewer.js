@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-import "../../App.js"
 
 const ModelViewer = ({ item }) => {
   const [display, setDisplay] = useState(false);
