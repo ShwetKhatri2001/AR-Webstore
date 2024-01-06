@@ -178,7 +178,7 @@
 }
 
 
-@media (max-width :450px) {
+@media (max-width :560px) {
   .action {
     width: 100%;
   }
