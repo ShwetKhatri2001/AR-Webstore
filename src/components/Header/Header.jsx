@@ -29,7 +29,7 @@ const Header = () => {
             onClick={() => setShowMobileSidebar(!showMobileSidebar)}
           >
             {Array.from({ length: 2 + showMobileSidebar }, (_, i) => (
-              <div key={i} />
+              <div key={i} className={i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"}/>
             ))}
             {/* If the condition is true, only the first, second, and last div elements will be rendered. */}
           </div>
