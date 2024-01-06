@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-
+import styled from 'styled-components';
 const ModelViewer = ({ item }) => {
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
@@ -39,8 +39,28 @@ const ModelViewer = ({ item }) => {
     height: ARSupported ? "85%" : "75%",
     borderRadius: 15,
   };
-
+const AnimatedDiv=styled.div`
+   margin-top:10px;
+ --c: #000000; /* the border color */
+  --b: 9px;    /* the border thickness*/
+  --g: 5px;     /* the gap on hover */
+  
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .3s, background-position .3s .3s;
+  cursor: pointer;
+  &:hover {
+    --_i: 100%;
+  transition: .5s, background-size .5s .5s;
+  }
+`;
   return (
+    <AnimatedDiv>
     <div className="model-view">
       <model-viewer
         ref={model}
@@ -112,6 +132,7 @@ const ModelViewer = ({ item }) => {
         </div>
       </div>
     </div>
+    </AnimatedDiv>
   );
 };
 
