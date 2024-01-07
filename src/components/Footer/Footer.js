@@ -9,8 +9,7 @@ function Footer() {
         <div class="contact-content">
           <Link to="/"> Home </Link>
           <Link
-            to="https://github.com/ShwetKhatri2001/AR-Webstore#hi--shwet-here-and-welcome-to-ar-webstore"
-            target="_blank"
+            to="/about"
           >
             About
           </Link>
