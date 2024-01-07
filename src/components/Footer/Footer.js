@@ -10,7 +10,6 @@ function Footer() {
           <Link to="/"> Home </Link>
           <Link
             to="/about"
-            target="_blank"
           >
             About
           </Link>
