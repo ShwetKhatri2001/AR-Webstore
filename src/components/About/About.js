@@ -88,36 +88,49 @@ const About = () => {
             </div>
             <h1 className="second-head fromtop-anim">Learning Exposure !</h1>
             <div className="learning-about-block">
-    <div className="learning-about fade-effect" style={{ flex: "1.8" }}>
-        {/* ... existing content ... */}
-    </div>
-    <div className="learning-about fade-effect" style={{ display: "flex", flexDirection: "column", flex: "1.2" }}>
-        <p style={{ color: "yellow" }} className="fromtop-anim">
-            <i>Find some helpful resources below to start your journey in XR.</i>
-        </p>
-        <ul className="about-res-ul">
-        <li>
-                <a href="https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92">
-                    <img className="res1-img fade-effect" src={res1} alt="Resource 1" style={{ height: "180px" }} />
-                </a>
-            </li>
-            <li>
-                <div className="yt-res-container fade-effect" style={{ height: "200px" }}>
-                    <iframe
-                        className='yt-res'
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/gAzIkjkJSzM?si=66Slz3nUzBZC-b5i"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                    ></iframe>
+                <div className="learning-about fade-effect" style={{ "flex": "1.8" }}><span className="fade-effect text-content">
+                    <b>XR</b>, or  <b>Extended Reality</b>, is an exciting technology that combines the real world with
+                    virtual elements. As a student interested in XR, while contributing to this project,
+                    you will learn about the technical aspects of XR, which involve understanding how to
+                    create and render virtual objects, recognize and track objects in the real world,
+                    and explore how users interact with virtual environments, ensuring intuitive and
+                    immersive experiences. <p>While studying XR, you can delve into programming technologies
+                        like <i style={{ "color": "blueviolet" }}>Three.js</i> or <i style={{ "color": "blueviolet" }}>Unity</i> to develop interactive and immersive experiences.
+                        You'll also explore 3D modelling and animation to create virtual objects
+                        and environments.</p>
+
+                    No no! Don't worry about some top of the world words mentioned above,
+                    the project is completely beginner friendly 😅 !But if you give your best,
+                    then you can really learn and build something out of the box for the future while working on this project,
+                    which I can ensure 😎!.</span>
                 </div>
-            </li>
-        </ul>
-    </div>
-</div>
+                <div className="learning-about fade-effect" style={{ display: "flex", flexDirection: "column", flex: "1.2" }}>
+                    <p style={{ color: "yellow" }} className="fromtop-anim">
+                        <i>Find some helpful resources below to start your journey in XR.</i>
+                    </p>
+                    <ul className="about-res-ul">
+                        <li>
+                            <a href="https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92">
+                                <img className="res1-img fade-effect" src={res1} alt="Resource 1" style={{ height: "180px" }} />
+                            </a>
+                        </li>
+                        <li>
+                            <div className="yt-res-container fade-effect" style={{ height: "200px" }}>
+                                <iframe
+                                    className='yt-res'
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/gAzIkjkJSzM?si=66Slz3nUzBZC-b5i"
+                                    title="YouTube video player"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div><h1 className="second-head fromtop-anim">Project Admin</h1>
                 <a href="https://github.com/ShwetKhatri2001"><div className="about-admin-box fade-effect"><img className="about-admin-img" src="https://avatars.githubusercontent.com/u/56475750?v=4" /><p className="about-admin">Shwet Khatri</p></div></a></div>
             <div><h1 className="second-head fromtop-anim" style={{ "marginTop": "13vh" }}>Contributors</h1>
