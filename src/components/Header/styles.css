@@ -7,7 +7,7 @@ header {
   align-items: center;
   background:var(--Bg);
   display: flex;
-  padding: 1rem;
+  padding: .8rem;
   position: inherit;
 }
 ::-webkit-scrollbar {
@@ -105,11 +105,11 @@ nav .project-title:hover {
   width: 2rem;
 }
 
-.active div:nth-child(1) {
+.active .firstbar:nth-child(1) {
   transform: rotate(45deg) translateX(1px) translateY(2px);
 }
 
-.active div:nth-child(2) {
+.active .secondbar:nth-child(2) {
   transform: rotate(-45deg);
 }
 

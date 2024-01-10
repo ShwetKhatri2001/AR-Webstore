@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-
 const ModelViewer = ({ item }) => {
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
@@ -84,7 +83,7 @@ const ModelViewer = ({ item }) => {
           <QRCode
             id={item.name}
             value={window.location.href}
-            size={130}
+            size={110}
             bgColor="#ffffff"
             fgColor="#000000"
             level="H"
