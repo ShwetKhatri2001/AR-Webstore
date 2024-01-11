@@ -293,30 +293,43 @@ a:visited{
          width: 90%;
          padding: 2vh;
     }
-    .yt-res{
-        width: 90%;
+    .yt-res {
+        width: 100%; /* Update width to 100% for responsiveness */
+        height: 100%; /* Adjust height accordingly */
         margin: 2vh auto;
         display: block;
     }
-    .about-admin-box{
-              width: 80%;
-              flex-direction: column;
-              font-size: 2rem;
+    
+    .res1-img {
+        width: 100%; 
+        height: auto;
+        margin: 7vh auto;
     }
+    
+    .about-res-ul {
+        display: flex;
+        padding: 2vh;
+        list-style-type: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .yt-res-container {
+        width: 100%;
+        margin-top: -20px; 
+    }
+    
     .contributor img {
-        width: 90vw;
-        height: 90%;
+        width: 100%;
+        height: auto;
         margin: 5vh auto;
-    }       
+    }      
     .second-head {
         font-size: 2rem;
         margin: 5vh 0 0 0;
     }
 }
 
-/* .contributor{
-    margin: 4vh 2vh;
-} */
 .learning-about-block{
     display: flex;
 }
