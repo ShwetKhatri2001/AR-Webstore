@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 import logo from '../../assets/logo.png';
-
 const Header = () => {
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
 
@@ -19,19 +18,18 @@ const Header = () => {
     height: 'auto',  // Maintain the aspect ratio
   };
 
-
   return (
     <header>
       {/* Mobile Menu Icon */}
       <nav>
         <div className="navtop">
-            <img src= {logo} alt="My Logo" style={logoStyle}  />
-         <h2>
+          <img src={logo} alt="My Logo" style={logoStyle} />
+          <h2>
             AR Webstore
             {/* <Link to="/" onClick={closeMobileSidebar} className="project-title">
             </Link> */}
           </h2>
-          <div className={`mobile-menu-icon ${!showMobileSidebar ? "active" :""}`} onClick={toggleMobileSidebar}>
+          <div className={`mobile-menu-icon ${!showMobileSidebar ? "active" : ""}`} onClick={toggleMobileSidebar}>
             <div />
             {showMobileSidebar && <div />}
             <div />
@@ -45,14 +43,14 @@ const Header = () => {
             // activeStyle={{ color: "blue", textDecoration: "underline" }}
             onClick={toggleMobileSidebar}
           >
-      
+
             Home
           </Link>
           <Link
             to="/about"
             // target="_blank"
             onClick={toggleMobileSidebar}
-            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          // activeStyle={{ color: "blue", textDecoration: "underline" }}
           >
             About
           </Link>
@@ -60,14 +58,14 @@ const Header = () => {
           <Link
             to="/feedback"
             onClick={toggleMobileSidebar}
-            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          // activeStyle={{ color: "blue", textDecoration: "underline" }}
           >
             Feedback
           </Link>
           <Link
             to="/contact"
             onClick={toggleMobileSidebar}
-            // activeStyle={{ color: "blue", textDecoration: "underline" }}
+          // activeStyle={{ color: "blue", textDecoration: "underline" }}
           >
             Contact Us
           </Link>
