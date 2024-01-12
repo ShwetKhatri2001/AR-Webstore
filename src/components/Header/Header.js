@@ -18,6 +18,7 @@ const Header = () => {
     height: 'auto',  // Maintain the aspect ratio
   };
 
+  
   return (
     <header>
       {/* Mobile Menu Icon */}
