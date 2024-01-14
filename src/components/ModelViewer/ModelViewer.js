@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
+import LazyLoad from "react-lazyload";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
@@ -76,7 +77,7 @@ const ModelViewer = ({ item }) => {
           </button>
         )}
       </model-viewer>
-
+      <LazyLoad>
       {/* Card content below the model-viewer */}
       <div className="qr-sec">
         {!ARSupported && (
@@ -110,6 +111,7 @@ const ModelViewer = ({ item }) => {
           <div className="add-icon">+</div>
         </div>
       </div>
+      </LazyLoad>
     </div>
   );
 };
