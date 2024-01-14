@@ -172,6 +172,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 li:hover{
     transform: scale(1.01);  
 }
@@ -181,7 +182,7 @@ a:visited{
 .res1-img{
     width: 93%;
     height: 70%;
-    margin: 7vh 1vh;
+    margin: 2vh 1vh;
 }
 .a-res1:hover{
 text-decoration: none;
@@ -303,7 +304,7 @@ a:visited{
     .res1-img {
         width: 100%; 
         height: auto;
-        margin: 7vh auto;
+        margin: 0vh auto;
     }
     
     .about-res-ul {
@@ -335,6 +336,10 @@ a:visited{
 }
 .fade-effect{
     opacity: 0;
+}
+
+.fixing {
+    margin: 1px;
 }
 
 .fromtop-anim.active{

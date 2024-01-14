@@ -109,7 +109,7 @@ const About = () => {
                         <i>Find some helpful resources below to start your journey in XR.</i>
                     </p>
                     <ul className="about-res-ul">
-                        <li>
+                        <li style={{marginBottom: "30px"}} >
                             <a href="https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92">
                                 <img className="res1-img fade-effect" src={res1} alt="Resource 1" style={{ height: "180px" }} />
                             </a>
