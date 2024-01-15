@@ -60,13 +60,13 @@ const Feedback = () => {
     <div className="container">
       <h1>Leave a Message</h1>
       <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="liked">What did you like most about AR-Webstore?</label>
+        <label htmlFor="liked">What did you like most about AR-Webstore?</label><br/>
         <input type="text" id="liked" placeholder="I would Like to say..." /><br/>
 
-        <label htmlFor="improve">Will our 3D and AR features improve your shopping experience if we integrate it on an online e-commerce store ?</label>
+        <label htmlFor="improve">Will our 3D and AR features improve your shopping experience if we integrate it on an online e-commerce store ?</label><br/>
         <input type="text" id="improve" placeholder="I would Like to say..." /><br/>
 
-        <label htmlFor="features">What are the other features that excite you to have them on AR-Webstore ?</label>
+        <label htmlFor="features">What are the other features that excite you to have them on AR-Webstore ?</label><br/>
         <input type="text" id="features" placeholder="I would Like to say..." /><br/>
 
         <label htmlFor="comments">Any other comments?</label><br/>
