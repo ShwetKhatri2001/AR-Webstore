@@ -45,11 +45,11 @@ const Feedback = () => {
 
     window.Email.send({
       Host: "smtp.elasticemail.com",
-      Username: "guptauv21@gmail.com",
-      Password: "6B757A6226DDCFFD5B9E62BE67AAE5868267",
-      To: "guptauv21@gmail.com",
-      From: "guptauv21@gmail.com",
-      Subject: "Your Website is Reviewed",
+      Username: "shwetkhatri2001@gmail.com",
+      Password: "1630D6FDA4A59743B7B2CD90A9CA7B867B89",
+      To: "shwetkhatri2001@gmail.com",
+      From: "shwetkhatri2001@gmail.com",
+      Subject: "AR-Webstore has got a feeback",
       Body: body,
     }).then((message) => {
         if (message === "OK") {
