@@ -136,9 +136,7 @@ const About = () => {
                 <a href="https://github.com/ShwetKhatri2001"><div className="about-admin-box fade-effect"><img className="about-admin-img" src="https://avatars.githubusercontent.com/u/56475750?v=4" /><p className="about-admin">Shwet Khatri</p></div></a></div>
             <div><h1 className="second-head fromtop-anim" style={{ "marginTop": "13vh" }}>Contributors</h1>
                 <p className="second-head fromtop-anim" style={{ "color": "blue" }}><b>Credits go to these contributors:</b></p>
-                <div id="contributor" className="fade-effect">
                 <ContributorSection />
-                </div>
             </div>
         </>
 

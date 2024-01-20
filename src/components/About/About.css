@@ -236,7 +236,6 @@ a:visited{
 }
 
 .contributor-card:hover {
-    box-shadow: 0 0 10px rgba(253, 251, 251, 0.5); /* Adjust the color and size of the glow as needed */
     transform: scale(1.1);
 }
 @media only screen and (max-width:768px){

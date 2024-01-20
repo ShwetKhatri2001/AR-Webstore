@@ -67,7 +67,7 @@ const ContributorSection = () => {
     }
   }, []);
 
-  return <div id="contributor" ref={contRef} />;
+  return <div id="contributor" className='fade-effect' ref={contRef} />;
 };
 
 export default ContributorSection;
