@@ -218,6 +218,27 @@ text-decoration: none;
 a:visited{
     text-decoration: none;
 }
+#contributor {
+    margin: 0;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contributor-card:nth-child(4n+1), .contributor-card:nth-child(4n+3) {
+    margin-top: -4px;
+}
+
+.contributor-card {
+    clip-path: circle(40%);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out , opacity 0.3s ease-in-out;
+}
+
+.contributor-card:hover {
+    box-shadow: 0 0 10px rgba(253, 251, 251, 0.5); /* Adjust the color and size of the glow as needed */
+    transform: scale(1.1);
+}
 @media only screen and (max-width:768px){
     .aboutrightsec{
         
