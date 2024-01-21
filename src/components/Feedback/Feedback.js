@@ -1,10 +1,11 @@
 /* eslint-disable no-useless-concat */
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Feedback.css";
 
 const Feedback = () => {
   const formRef = useRef(null);
+  const [nameError, setNameError] = useState(false);
 
   useEffect(() => {
     const script1 = document.createElement("script");
@@ -23,7 +24,24 @@ const Feedback = () => {
     };
   }, []);
 
+  const handleNameChange = (e) => {
+    const isValid = /^[a-zA-Z]+$/.test(e.target.value);
+    setNameError(!isValid);
+  };
+
+  // useEffect(() => {
+  //   const nameInput = document.getElementById("username");
+  //   const isValid = /^[a-zA-Z]+$/.test(nameInput.value);
+  //   setNameError(!isValid);
+  // }, []);
+
   const sendMail = () => {
+  if (nameError) {
+      window.alert("Please enter a valid name (only characters allowed)");
+      return;
+    }
+
+    
     let likes = document.getElementById("liked").value;
     let usersname = document.getElementById("username").value;
     let usersemail = document.getElementById("useremail").value;
@@ -75,7 +93,8 @@ const Feedback = () => {
       <h1>Your Feedback ✍️ Our Evolution 🚀</h1>
       <form ref={formRef} onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="username">Name:</label><br/>
-        <input type="text" id="username" placeholder="Your Name..." />
+        <input type="text" id="username" placeholder="Your Name..." onChange={handleNameChange} />
+        {nameError && <div className="error-message">Only characters are allowed</div>}      
         <br />
 
         <label htmlFor="useremail">Email:</label><br/>
