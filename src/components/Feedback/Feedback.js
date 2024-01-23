@@ -31,7 +31,13 @@ const Feedback = () => {
     let feature = document.getElementById("features").value;
     let comment = document.getElementById("comments").value;
 
-    let body = "Name of the User: <br/>" + usersname + "<br/>" + "Email of the User: <br/>" + usersemail + "<br/><br/>" +
+    let body =
+      "Name of the User: <br/>" +
+      usersname +
+      "<br/>" +
+      "Email of the User: <br/>" +
+      usersemail +
+      "<br/><br/>" +
       "What did you like most about AR-Webstore? <br/>" +
       likes +
       "<br/><br/> Will our 3D and AR features improve your shopping experience if we integrate it on an online e-commerce store ?<br/>" +
@@ -40,8 +46,6 @@ const Feedback = () => {
       feature +
       "<br/> <br/>Any other comments?<br/>" +
       comment;
-
-    console.log(body);
 
     window.Email.send({
       Host: "smtp.elasticemail.com",
@@ -52,33 +56,37 @@ const Feedback = () => {
       Subject: "AR-Webstore has got a feedback",
       Body: body,
     }).then((message) => {
-        if (message === "OK") {
-          window.swal(
+      if (message === "OK") {
+        window
+          .swal(
             "Successfull",
             "Thanks! We've received your feedback",
             "success"
-          ).then(() => {
-            formRef.current.reset(); 
+          )
+          .then(() => {
+            formRef.current.reset();
           });
-        } else {
-          window.swal(
-            "Something Wrong",
-            "Your FeedBack is not Received",
-            "error"
-          );
-        }
-      });
+      } else {
+        window.swal(
+          "Something Wrong",
+          "Your FeedBack is not Received",
+          "error"
+        );
+      }
+    });
   };
 
   return (
     <div className="container">
       <h1>Your Feedback ✍️ Our Evolution 🚀</h1>
       <form ref={formRef} onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="username">Name:</label><br/>
+        <label htmlFor="username">Name:</label>
+        <br />
         <input type="text" id="username" placeholder="Your Name..." />
         <br />
 
-        <label htmlFor="useremail">Email:</label><br/>
+        <label htmlFor="useremail">Email:</label>
+        <br />
         <input type="text" id="useremail" placeholder="Your Email..." />
         <br />
 

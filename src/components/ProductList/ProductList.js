@@ -10,7 +10,7 @@ const ProductList = () => {
 
       {productItems.map((item) => (
         <LazyLoad>
-        <ModelViewer item={item} />
+          <ModelViewer item={item} />
         </LazyLoad>
       ))}
     </section>
