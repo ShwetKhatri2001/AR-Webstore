@@ -17,6 +17,8 @@
   border-radius: 18px;
   border: 1px solid #dadce0;
   cursor: pointer;
+  scroll-behavior: smooth;
+
 }
 .model-view{
   transition: all 1s;

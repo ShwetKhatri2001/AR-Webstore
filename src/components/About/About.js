@@ -29,6 +29,31 @@ const About = () => {
             observer.observe(section);
         });
     }, []);
+
+    const [showScrollUpButton, setShowScrollUpButton] = React.useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const showButtonThreshold = 200;
+  
+        // Show the scroll-up button when the user scrolls down
+        setShowScrollUpButton(scrollY > showButtonThreshold);
+      };
+  
+      // Add event listener for scroll
+      window.addEventListener("scroll", handleScroll);
+  
+      // Remove event listener when the component is unmounted
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
+    const scrollToTop = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <>
             <div className="about-banner">
@@ -137,6 +162,13 @@ const About = () => {
             <div><h1 className="second-head fromtop-anim" style={{ "marginTop": "13vh" }}>Contributors</h1>
                 <p className="second-head fromtop-anim" style={{ "color": "blue" }}><b>Credits go to these contributors:</b></p>
                 <ContributorSection />
+
+
+                {showScrollUpButton && (
+        <button className='scroll-up-button' onClick={scrollToTop}>
+          Scroll Up
+        </button>
+      )}
             </div>
         </>
 
