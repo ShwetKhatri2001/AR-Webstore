@@ -64,14 +64,16 @@ input[type="password"]{
     width: 100%;
     margin-top: 30px;
     font-size: medium;
-    background: bisque;
-    border: 1px solid bisque;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(124, 120, 120, 0.19);
 }
 .sign-up-button:hover {
     
-    background: bisque;
-    border: 1px solid bisque;
+    background: black;
+    border: 1px solid black;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(124, 120, 120, 0.19);
 }
 .sign-up-redirect-p{
