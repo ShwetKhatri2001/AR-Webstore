@@ -1,6 +1,6 @@
 import "./App.css";
 import "@google/model-viewer/dist/model-viewer.min.js";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ProductList from "./components/ProductList/ProductList";
 import About from "./components/About/About";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
@@ -11,8 +11,8 @@ import Feedback from "./components/Feedback/Feedback";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Header />
+    <>
+    <Header />
       <Routes>
         <Route path="/" element={<ProductList />} />
         <Route path="/about" element={<About />} />
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+      </>
   );
 };
 

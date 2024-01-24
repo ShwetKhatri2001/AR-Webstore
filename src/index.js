@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import SignIn from './components/SignIn/Signin';
+import SignUp from './components/SignUp/SignUp';
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/" element={<App />} />
+      </Routes>
+  </BrowserRouter>
 </React.StrictMode>,
   document.getElementById('root')
 );
