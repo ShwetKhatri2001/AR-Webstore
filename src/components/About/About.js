@@ -1,4 +1,5 @@
 import "./About.css";
+import ContributorSection from './ContributorSection';
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import tick from './tick.png';
@@ -109,7 +110,7 @@ const About = () => {
                         <i>Find some helpful resources below to start your journey in XR.</i>
                     </p>
                     <ul className="about-res-ul">
-                        <li>
+                        <li style={{marginBottom: "30px"}} >
                             <a href="https://codemaker2016.medium.com/develop-your-first-webar-app-using-webxr-and-three-js-7a437cb00a92">
                                 <img className="res1-img fade-effect" src={res1} alt="Resource 1" style={{ height: "180px" }} />
                             </a>
@@ -135,11 +136,7 @@ const About = () => {
                 <a href="https://github.com/ShwetKhatri2001"><div className="about-admin-box fade-effect"><img className="about-admin-img" src="https://avatars.githubusercontent.com/u/56475750?v=4" /><p className="about-admin">Shwet Khatri</p></div></a></div>
             <div><h1 className="second-head fromtop-anim" style={{ "marginTop": "13vh" }}>Contributors</h1>
                 <p className="second-head fromtop-anim" style={{ "color": "blue" }}><b>Credits go to these contributors:</b></p>
-                <div class="contributor fade-effect">
-                    <a href="https://github.com/ShwetKhatri2001/AR-Webstore/graphs/contributors">
-                        <img src="https://contrib.rocks/image?repo=ShwetKhatri2001/AR-Webstore" />
-                    </a>
-                </div>
+                <ContributorSection />
             </div>
         </>
 
