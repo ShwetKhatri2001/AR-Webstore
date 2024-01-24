@@ -8,6 +8,8 @@ import gun from './rightimg3.png'
 import img1 from './prob1.jpg'
 import img2 from './prob2.jpg'
 import res1 from './resource1.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope , faArrowUp} from '@fortawesome/free-solid-svg-icons'
 
 const About = () => {
     useEffect(() => {
@@ -166,8 +168,8 @@ const About = () => {
 
                 {showScrollUpButton && (
         <button className='scroll-up-button' onClick={scrollToTop}>
-          Scroll Up
-        </button>
+<FontAwesomeIcon icon={faArrowUp} />
+   </button>
       )}
             </div>
         </>

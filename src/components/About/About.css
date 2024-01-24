@@ -388,7 +388,7 @@ a:visited{
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #424951;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -397,7 +397,7 @@ a:visited{
   }
   
   .scroll-up-button:hover {
-    background-color: #0056b3;
+    background-color: #000000;
   }
 
 
