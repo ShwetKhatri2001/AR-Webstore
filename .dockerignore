@@ -1,0 +1,9 @@
+node_modules
+build
+Dockerfile
+.git
+./github
+package-lock.json
+LICENSE
+README.md
+security.txt
