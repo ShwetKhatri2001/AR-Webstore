@@ -111,6 +111,24 @@ No no! Don't worry about some top of the world words mentioned above, the projec
     ```
 
 This will install the app dependencies, start an instance of webpack-dev-server, and expose the local web server to the internet using the local tunnel URL will be printed on your terminal.
+
+<a name="docker"></a>
+## 🧰 Docker-Setuo
+
+1. Get the docker 
+   For windows/wsl use this : (https://docs.docker.com/desktop/install/windows-install/)
+   For Mac use this: (https://docs.docker.com/desktop/install/mac-install/)
+
+2. check docker has installed or not useing 
+    `docker -v`
+
+3. Pull the Image of  #AR-webstore from dockerhub
+    `docker pull shwetkhatri2001/ar-webstore`
+4. list the images that are present currently 
+    `docker images`
+5. run the docker image of #AR-webstore 
+    `docker run -p 3000:3000 shwetkhatri2001/ar-webstore`
+
 <a name="build"></a>
 ## 🧰 Build
 
