@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import { Link } from "react-router-dom";
 const SignUp = () => {
-    const [ error,setError ] = useState('eiu')
+    const [ error,setError ] = useState('')
     const [ signInDetails,setSignInDetails ] = useState({
         email:'',
         password:'',
