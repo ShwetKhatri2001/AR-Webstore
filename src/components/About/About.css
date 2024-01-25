@@ -380,6 +380,27 @@ a:visited{
     animation: flyImgright 2s ease-in-out forwards;
 }
 
+.scroll-up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #424951;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scroll-up-button:hover {
+    background-color: #000000;
+  }
+
+
 @keyframes flyImgleft {
     0%{
         transform: translateX(100%)

@@ -1,4 +1,11 @@
 /* Colors */
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+
 :root {
   --primary-color: #3498db;
   --background-color: #fff;
@@ -21,6 +28,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color:#e3e8ed;
+  scroll-behavior: smooth;
+
 }
 
 #root {
