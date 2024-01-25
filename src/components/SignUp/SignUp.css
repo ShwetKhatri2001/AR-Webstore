@@ -1,4 +1,8 @@
 
+.main-sign_up_container{
+    height: 100vh;
+    width: 100%;
+}
 .sign-up-container{
     position: absolute;
     width: 100%;

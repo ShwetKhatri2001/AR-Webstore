@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SignIn.css";
 import { Link } from "react-router-dom";
-const SignUp = () => {
+const SignIn = () => {
     const [ error,setError ] = useState('')
     const [ signInDetails,setSignInDetails ] = useState({
         email:'',
@@ -34,8 +34,8 @@ const SignUp = () => {
     }
 
   return (
-    
-    <form onSubmit={handleSubmit} className="sign-in-container">
+    <main className="main-sign_in_container">
+        <form onSubmit={handleSubmit} className="sign-in-container">
         <p className="error-paragraph">{error !== '' ? `Error: ${error}` : null}</p>
         <h3>Sign in</h3>
            
@@ -65,8 +65,10 @@ const SignUp = () => {
             </button>
             <p className="sign-in-redirect-p">Don't have an account? <Link to="/sign-up">Sign up</Link></p>
     </form>
+    </main>
+    
 
   );
 };
 
-export default SignUp;
+export default SignIn;

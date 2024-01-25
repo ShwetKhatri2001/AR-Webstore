@@ -41,6 +41,7 @@ const SignUp = () => {
     }
 
   return (
+    <main className="main-sign_up_container">
     
     <form onSubmit={handleSubmit} className="sign-up-container">
         <p className="error-paragraph">{error !== '' ? `Error: ${error}` : null}</p>
@@ -89,6 +90,7 @@ const SignUp = () => {
             </button>
             <p className="sign-up-redirect-p">Already have an account? <Link to="/sign-in">Sign in</Link></p>
     </form>
+    </main>
 
   );
 };
