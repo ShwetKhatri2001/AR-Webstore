@@ -8,6 +8,8 @@ const Header = () => {
     { label: "About", Path: "/about" },
     { label: "Feedback", Path: "/feedback" },
     { label: "Contact", Path: "/contact" },
+    {label: 'SignIn', Path: '/sign-in'},
+    {label: 'SignUp', Path: '/sign-up'}
   ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
   return (
