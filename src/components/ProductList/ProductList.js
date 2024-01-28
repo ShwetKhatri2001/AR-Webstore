@@ -8,9 +8,9 @@ const ProductList = () => {
 
     <section className="list-view">
 
-      {productItems.map((item) => (
-        <LazyLoad>
-        <ModelViewer item={item} />
+      {productItems.map((item, idx) => (
+        <LazyLoad key={idx}>
+          <ModelViewer item={item} />
         </LazyLoad>
       ))}
     </section>
