@@ -25,10 +25,22 @@
 .Hotspot {
   padding: 1em;
   background-color: white;
-  color: black;
   border-radius: 50px;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  color: rgba(0, 0, 0, 0.8);
+  display: block;
+  font-family: Futura, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  max-width: 128px;
+  overflow-wrap: break-word;
+  padding: 0.5em 1em;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .model-view:hover {

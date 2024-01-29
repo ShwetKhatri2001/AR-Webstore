@@ -8,6 +8,16 @@ const ModelViewer = ({ item }) => {
   const [ARSupported, setARSupported] = useState(false);
   const [annotate, setAnnotate] = useState(false);
 
+
+  let modelViewer1 = {
+    backgroundColor: " #ecf0f3",
+    overflowX: "hidden",
+    posterColor: "#eee",
+    width: "100%",
+    height: ARSupported ? "85%" : "75%",
+    borderRadius: 15,
+  };
+
   // Accessing product for full screen start
   const model = useRef();
 
@@ -19,6 +29,13 @@ const ModelViewer = ({ item }) => {
     } else if (document.exitFullscreen) document.exitFullscreen();
   }
   // Full screen code end
+
+
+  const handleAnnotateClick = (annotation) => {
+    const { orbit, target, position } = annotation;
+    model.current.cameraTarget = position;
+    model.current.orbit = target
+  }
 
   useEffect(() => {
     if (
@@ -34,14 +51,7 @@ const ModelViewer = ({ item }) => {
     }
   }, []);
 
-  const modelViewer1 = {
-    backgroundColor: " #ecf0f3",
-    overflowX: "hidden",
-    posterColor: "#eee",
-    width: "100%",
-    height: ARSupported ? "85%" : "75%",
-    borderRadius: 15,
-  };
+
 
   return (
     <div className="model-view">
@@ -56,6 +66,7 @@ const ModelViewer = ({ item }) => {
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
         auto-rotate
+
       >
 
         {ARSupported && (
@@ -96,7 +107,10 @@ const ModelViewer = ({ item }) => {
             slot={annotate.slot}
             data-position={annotate.position}
             data-normal={annotate.normal}
+            data-orbit={annotate.orbit}
+            data-target={annotate.target}
             data-visibility-attribute="visible"
+            onClick={() => handleAnnotateClick(annotate)}
           >
             <div class="HotspotAnnotation">{annotate.title}</div>
           </button>
