@@ -5,6 +5,7 @@ import iospainting from "../assets/models/Painting.usdz";
 import car from "../assets/models/car.glb";
 import ioscar from "../assets/models/car.usdz";
 import car1 from "../assets/models/Car1.glb";
+import exportss from "../assets/models/export.glb";
 import ioscar1 from "../assets/models/Car1.usdz";
 
 const productItems = [
@@ -12,6 +13,14 @@ const productItems = [
     id: 1,
     name: "Sheen Chair",
     modelSrc: sheenchair,
+    iOSSrc: ioschair,
+    category: "Furniture",
+    color: "Orange",
+  },
+  {
+    id: 6,
+    name: "Sheen Chair",
+    modelSrc: exportss,
     iOSSrc: ioschair,
     category: "Furniture",
     color: "Orange",
