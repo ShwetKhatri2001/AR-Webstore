@@ -4,7 +4,7 @@
     width: 100%;
 }
 .sign-up-container{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     max-width: 340px;

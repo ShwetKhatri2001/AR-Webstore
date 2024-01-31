@@ -31,9 +31,9 @@
   margin-right: auto;
 }
 
-.contact-content a:hover {
+/* .contact-content a:hover {
   text-decoration: underline;
-}
+} */
 
 .action {
   display: flex;
@@ -122,7 +122,7 @@
 }
 
 .contact-content a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .action {

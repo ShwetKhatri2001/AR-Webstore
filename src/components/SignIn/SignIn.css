@@ -4,7 +4,7 @@
     width: 100%;
 }
 .sign-in-container{
-    position: absolute;
+    position: relative;
     width: 100vh;
     height: auto;
     max-width: 340px;
@@ -15,7 +15,7 @@
     align-items: center;
     background: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    top: 50%;
+    top: 40%;
     left: 50%;
     border-radius: 12px;
     -ms-transform: translate(-50%, -50%);
