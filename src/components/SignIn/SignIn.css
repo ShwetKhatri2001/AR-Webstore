@@ -1,10 +1,10 @@
 
 .main-sign_in_container{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 .sign-in-container{
-    position: absolute;
+    position: relative;
     width: 100vh;
     height: auto;
     max-width: 340px;
