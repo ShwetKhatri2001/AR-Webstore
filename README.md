@@ -151,13 +151,26 @@ For development and debugging, attach the device to your machine using a cable a
 
 <br>
 
-<div align="center">
+<div align="left">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
-    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+    <img alt="Girlscript Summer of Code" width=500 src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
   </picture>
 </div>
+
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/32c23460-579d-4158-b1c5-aaae3b53cba7" width="500" />
+<br/>
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/cafaa1b8-4f6e-40a4-bf19-371e173faf63" width="400" />
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/fcfa9ffe-7d51-4ad8-89e0-ae38589a710e" width="250" />
+<br/>
+<br/>
 
 <a name="project-admin"></a>
 ## Project Admin
