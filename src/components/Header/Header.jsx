@@ -8,8 +8,8 @@ const Header = () => {
     { label: "About", Path: "/about" },
     { label: "Feedback", Path: "/feedback" },
     { label: "Contact", Path: "/contact" },
-    {label: 'SignIn', Path: '/sign-in'},
-    {label: 'SignUp', Path: '/sign-up'}
+    { label: "SignIn", Path: "/sign-in" },
+    { label: "SignUp", Path: "/sign-up" },
   ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
   return (
@@ -31,7 +31,12 @@ const Header = () => {
             onClick={() => setShowMobileSidebar(!showMobileSidebar)}
           >
             {Array.from({ length: 2 + showMobileSidebar }, (_, i) => (
-              <div key={i} className={i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"}/>
+              <div
+                key={i}
+                className={
+                  i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"
+                }
+              />
             ))}
             {/* If the condition is true, only the first, second, and last div elements will be rendered. */}
           </div>
@@ -45,6 +50,16 @@ const Header = () => {
               </Link>
             );
             /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
+          })}
+        </ul>
+        {/* Mobile Sidebar */}
+        <ul className={`mobile-sidebar ${showMobileSidebar ? "show" : ""}`}>
+          {navigationLinks.map((items, key) => {
+            return (
+              <Link to={items.Path} key={key}>
+                {items.label}
+              </Link>
+            );
           })}
         </ul>
       </nav>
