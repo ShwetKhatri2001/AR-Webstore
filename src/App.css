@@ -119,6 +119,25 @@
   padding: 0.2rem;
 }
 
+.wishlist-btn {
+  background-color: rgba(0, 0, 0, 0.284);
+  bottom: 19px;
+  right: 1rem;
+  border: none;
+  border-radius: 100%;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1/1;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
 .help-btn span,
 .fullscreen-btn span {
   width: 50px;

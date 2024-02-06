@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
+import WishList from "../WishList";
 
 const Header = () => {
   const navigationLinks = [
@@ -31,7 +32,12 @@ const Header = () => {
             onClick={() => setShowMobileSidebar(!showMobileSidebar)}
           >
             {Array.from({ length: 2 + showMobileSidebar }, (_, i) => (
-              <div key={i} className={i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"}/>
+              <div
+                key={i}
+                className={
+                  i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"
+                }
+              />
             ))}
             {/* If the condition is true, only the first, second, and last div elements will be rendered. */}
           </div>
@@ -48,6 +54,7 @@ const Header = () => {
           })}
         </ul>
       </nav>
+      <WishList />
     </header>
   );
 };
