@@ -42,27 +42,17 @@ const Header = () => {
           </div>
         </div>
         {/* Desktop Navigation */}
-        <ul className={`desktop-nav ${showMobileSidebar ? "hide" : ""}`}>
-          {navigationLinks.map((items, key) => {
-            return (
-              <Link to={items.Path} key={key}>
-                {items.label}
-              </Link>
-            );
-            /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
-          })}
-        </ul>
-        {/* Mobile Sidebar */}
-        <ul className={`mobile-sidebar ${showMobileSidebar ? "show" : ""}`}>
-          {navigationLinks.map((items, key) => {
-            return (
-              <Link to={items.Path} key={key}>
-                {items.label}
-              </Link>
-            );
-          })}
-        </ul>
       </nav>
+      <ul className={`desktop-nav ${showMobileSidebar ? "" : "show"}`}>
+        {navigationLinks.map((items, key) => {
+          return (
+            <Link to={items.Path} key={key}>
+              {items.label}
+            </Link>
+          );
+          /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
+        })}
+      </ul>
     </header>
   );
 };

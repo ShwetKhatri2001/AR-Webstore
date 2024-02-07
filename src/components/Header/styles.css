@@ -42,14 +42,14 @@ nav .navtop {
   width: fit-content;
 }
 
-nav ul {
+.desktop-nav {
   display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav a {
+.desktop-nav a {
   color: var(--text);
   font-size: 1.1rem;
   font-weight: 600;
@@ -82,6 +82,8 @@ a:hover::before {
 nav .project-title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color: var(--text);
 }
 
 nav .project-title:hover {
@@ -110,24 +112,6 @@ nav .project-title:hover {
   transform: rotate(-45deg);
 }
 
-/* styles for mobile sidebar */
-.mobile-sidebar {
-  background: var(--text);
-  display: none;
-  height: 100%;
-  padding: 1rem;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 70%;
-  z-index: 3;
-}
-
-.mobile-sidebar ul {
-  display: flex;
-  flex-direction: column;
-}
-
 /* Media Query for small screens */
 @media screen and (max-width: 768px) {
   header {
@@ -144,16 +128,8 @@ nav .project-title:hover {
     width: 100%;
   }
 
-  nav ul {
-    flex-direction: row;
-
-    width: 50%;
-    border: 1px solid red;
-  }
-
   nav a {
     padding: 0.5rem 0;
-    color: red;
   }
 
   .mobile-menu-icon {
@@ -169,14 +145,27 @@ nav .project-title:hover {
   .desktop-nav.hide {
     display: none;
   }
-
-  .mobile-sidebar {
-    display: block;
-    border: 1px solid red;
+  .desktop-nav {
+    position: fixed;
+    top: 12%;
+    right: -100%; /* Initially off-screen */
+    width: 50%; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #000000;
+    transition: right 0.3s ease; /* Transition the right property */
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
   }
 
-  /* Align mobile menu items to the right in responsive view */
-  .mobile-sidebar ul {
-    justify-content: flex-end;
+  .desktop-nav.show {
+    right: 0; /* Slide in from the right */
+  }
+  .desktop-nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 26px; /* Increase font size as needed */
+    margin-bottom: 20%; /* Add margin between the links */
   }
 }
