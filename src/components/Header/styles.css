@@ -8,7 +8,6 @@ header {
   background: var(--Bg);
   display: flex;
   padding: 0.8rem;
-  position: inherit;
 }
 ::-webkit-scrollbar {
   width: 8px;
@@ -26,6 +25,7 @@ header {
   background: #68707a;
 }
 /* styles for navigation links */
+
 nav {
   align-items: center;
   color: var(--text);
@@ -121,11 +121,15 @@ nav .project-title:hover {
   nav {
     box-sizing: border-box;
     flex-direction: column;
-    padding: 0 0.5rem;
   }
 
   nav .navtop {
+    top: 0;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--Bg);
+    padding: 0 0.5rem;
   }
 
   nav a {
@@ -147,7 +151,7 @@ nav .project-title:hover {
   }
   .desktop-nav {
     position: fixed;
-    top: 12%;
+    top: 7%;
     right: -100%; /* Initially off-screen */
     width: 50%; /* Adjust the width as needed */
     height: 100%;
@@ -156,7 +160,7 @@ nav .project-title:hover {
     z-index: 3;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 20% 5%;
   }
 
   .desktop-nav.show {
@@ -166,6 +170,7 @@ nav .project-title:hover {
     display: block;
     text-decoration: none;
     font-size: 26px; /* Increase font size as needed */
+
     margin-bottom: 20%; /* Add margin between the links */
   }
 }

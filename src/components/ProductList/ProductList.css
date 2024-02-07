@@ -10,3 +10,8 @@
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
+@media only screen and (max-width: 768px) {
+  .list-view {
+    padding-top: 5rem;
+  }
+}
