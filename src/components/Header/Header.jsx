@@ -12,6 +12,9 @@ const Header = () => {
     { label: "SignUp", Path: "/sign-up" },
   ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
+  const handleItemClick = () => {
+    setShowMobileSidebar(true);
+  };
   return (
     <header>
       {/* Mobile Menu Icon */}
@@ -46,9 +49,9 @@ const Header = () => {
       <ul className={`desktop-nav ${showMobileSidebar ? "" : "show"}`}>
         {navigationLinks.map((items, key) => {
           return (
-            <Link to={items.Path} key={key}>
-              {items.label}
-            </Link>
+            <li key={key} onClick={handleItemClick}>
+              <Link to={items.Path}>{items.label}</Link>
+            </li>
           );
           /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
         })}

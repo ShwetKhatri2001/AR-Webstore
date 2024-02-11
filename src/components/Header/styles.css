@@ -146,9 +146,6 @@ nav .project-title:hover {
     row-gap: 0;
   }
 
-  .desktop-nav.hide {
-    display: none;
-  }
   .desktop-nav {
     position: fixed;
     top: 7%;
@@ -169,7 +166,6 @@ nav .project-title:hover {
   .desktop-nav a {
     display: block;
     text-decoration: none;
-    font-size: 26px; /* Increase font size as needed */
 
     margin-bottom: 20%; /* Add margin between the links */
   }
