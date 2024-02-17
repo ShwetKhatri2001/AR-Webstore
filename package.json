@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.4.3",
+    "aframe": "^1.5.0",
+    "aframe-react": "^4.4.0",
     "qrcode.react": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
