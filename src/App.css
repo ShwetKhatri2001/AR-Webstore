@@ -139,13 +139,24 @@
   font-size: 1.5rem;
   padding: 0.2rem;
 }
+.fullscreen-btn span {
+  min-width: 100px; /* Adjust as needed */
+}
+
+.help-btn span {
+  width: 50px; /* Adjust as needed */
+}
+
 
 .help-btn span,
 .fullscreen-btn span {
-  width: 50px;
+  display: flex; /* Added */
+  align-items: center; /* Added */
+  justify-content: center; /* Added */
+  min-height: 30px;
   display: none;
   position: absolute;
-  font-size: 10px;
+  font-size: 15px;
   bottom: 22px;
   background-color: rgba(0, 0, 0, 0.545);
   padding: 20% 20%;
@@ -153,7 +164,9 @@
 }
 .help-btn:hover span,
 .fullscreen-btn:hover span {
-  display: block;
+  display: flex; /* Added */
+  align-items: center; /* Added */
+  justify-content: center; /* Added */
   width: 55px;
 }
 .fullscreen-btn {
@@ -179,13 +192,13 @@
 .annotate-btn {
   background-color: rgba(0, 0, 0, 0.284);
   border-radius: 100%;
-  bottom: 18px;
+  top: 10px;
   color: #fff;
   cursor: pointer;
   font-size: 15px;
   position: absolute;
   aspect-ratio: 1/1;
-  right: 7rem;
+  right: 0.5rem;
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0.7em;
@@ -254,9 +267,15 @@
 
 .fullscreen-btn span,
 .help-btn span {
-  right: -3.5rem;
+  margin-bottom: 2rem;
 }
-/* 
+
+/* .fullscreen-btn span,
+.help-btn span {
+  right: -3.5rem;
+  margin-bottom: 2rem;
+}
+
 .help-btn {
   top: 4rem;
   left: 1rem;
@@ -277,7 +296,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
   .list-view {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -301,7 +321,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
 }
 
@@ -316,7 +337,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
   .model-view {
     width: 80vw;
@@ -352,7 +374,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
   .model-view {
     width: 80vw;
@@ -380,7 +403,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 60%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
   .model-view {
     width: 80vw;
@@ -398,7 +422,8 @@
   }
   .fullscreen-btn span,
   .help-btn span {
-    right: 50%;
+    left: 2.7rem;
+    top: 0.3rem;
   }
   .model-view {
     width: 90vw;
