@@ -49,11 +49,14 @@ nav .navtop {
   padding: 0;
 }
 
+.desktop-nav li {
+  padding: 1rem;
+}
+
 .desktop-nav a {
   color: var(--text);
   font-size: 1.1rem;
   font-weight: 600;
-  padding: 0 1rem;
   text-decoration: none;
   transition: 0.5s all ease-in-out;
   position: relative;
