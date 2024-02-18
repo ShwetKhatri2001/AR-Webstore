@@ -10,7 +10,7 @@
   width: 99vw;
 }
 
-input[type=text],
+input[type="text"],
 textarea {
   width: 80%;
   padding: 12px;
@@ -33,4 +33,9 @@ textarea {
 
 .btn:hover {
   background-color: #45a049;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-top: 5rem;
+  }
 }

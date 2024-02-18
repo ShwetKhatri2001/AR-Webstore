@@ -8,10 +8,13 @@ const Header = () => {
     { label: "About", Path: "/about" },
     { label: "Feedback", Path: "/feedback" },
     { label: "Contact", Path: "/contact" },
-    {label: 'SignIn', Path: '/sign-in'},
-    {label: 'SignUp', Path: '/sign-up'}
+    { label: "SignIn", Path: "/sign-in" },
+    { label: "SignUp", Path: "/sign-up" },
   ];
   const [showMobileSidebar, setShowMobileSidebar] = useState(true);
+  const handleItemClick = () => {
+    setShowMobileSidebar(true);
+  };
   return (
     <header>
       {/* Mobile Menu Icon */}
@@ -31,23 +34,28 @@ const Header = () => {
             onClick={() => setShowMobileSidebar(!showMobileSidebar)}
           >
             {Array.from({ length: 2 + showMobileSidebar }, (_, i) => (
-              <div key={i} className={i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"}/>
+              <div
+                key={i}
+                className={
+                  i === 0 ? "firstbar" : i === 1 ? "secondbar" : "lastbar"
+                }
+              />
             ))}
             {/* If the condition is true, only the first, second, and last div elements will be rendered. */}
           </div>
         </div>
         {/* Desktop Navigation */}
-        <ul className={`desktop-nav ${showMobileSidebar ? "hide" : ""}`}>
-          {navigationLinks.map((items, key) => {
-            return (
-              <Link to={items.Path} key={key}>
-                {items.label}
-              </Link>
-            );
-            /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
-          })}
-        </ul>
       </nav>
+      <ul className={`desktop-nav ${showMobileSidebar ? "" : "show"}`}>
+        {navigationLinks.map((items, key) => {
+          return (
+            <li key={key} onClick={handleItemClick}>
+              <Link to={items.Path}>{items.label}</Link>
+            </li>
+          );
+          /* activeStyle={{ color: "blue", textDecoration: "underline" }} */
+        })}
+      </ul>
     </header>
   );
 };
