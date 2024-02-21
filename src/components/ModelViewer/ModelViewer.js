@@ -127,7 +127,7 @@ const ModelViewer = ({ item }) => {
             </button>
           </>
         )}
-
+        
         <button className="annotate-btn" onClick={() => setAnnotate((prevState) => !prevState)}>
           i
         </button>
@@ -147,12 +147,13 @@ const ModelViewer = ({ item }) => {
             <div class="HotspotAnnotation">{annotate.title}</div>
           </button>
         ))}
-
+        
+        <div class="controls variant_div">
+          <select ref={varient} id="variant"></select>
+        </div>
 
       </model-viewer>
-        <div class="controls">
-          <div>Variant: <select ref={varient} id="variant"></select></div>
-        </div>
+        
       <LazyLoad>
         {/* Card content below the model-viewer */}
         <div className="qr-sec">
