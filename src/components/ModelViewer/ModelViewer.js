@@ -73,13 +73,13 @@ const ModelViewer = ({ item }) => {
 
       // Adding a default option
       const defaultOption = document.createElement('option');
-      defaultOption.value = 'default';
+      defaultOption.value = 'Default';
       defaultOption.textContent = 'Default';
       varient?.current?.appendChild(defaultOption);
     });
 
     varient?.current?.addEventListener('input', (event) => {
-      modelViewer.variantName = event.target.value === 'default' ? null : event.target.value;
+      modelViewer.variantName = event.target.value === 'Default' ? null : event.target.value;
     });
   }, []);
 
