@@ -4,11 +4,13 @@ import LazyLoad from "react-lazyload";
 import QRCode from "qrcode.react";
 import Help from "./Help";
 const ModelViewer = ({ item }) => {
+  const [selectedVariant, setSelectedVariant] = useState('default');
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
   const [annotate, setAnnotate] = useState(false);
 
-
+  
+  
   let modelViewer1 = {
     backgroundColor: " #ecf0f3",
     overflowX: "hidden",
@@ -17,9 +19,12 @@ const ModelViewer = ({ item }) => {
     height: ARSupported ? "85%" : "75%",
     borderRadius: 15,
   };
-
+  
   // Accessing product for full screen start
   const model = useRef();
+
+  // Accessing varient selections element
+  const varient = useRef(null);
 
   console.log(item)
 
@@ -49,6 +54,33 @@ const ModelViewer = ({ item }) => {
     ) {
       setARSupported(true);
     }
+  }, []);
+
+  useEffect(() => {
+    // set up event listeners
+    const modelViewer = model.current
+    modelViewer &&
+    modelViewer.addEventListener('load', () => {
+      console.log('loaded')
+      const availableVariants = modelViewer?.availableVariants;
+      console.log(availableVariants)
+      for (const variant of availableVariants) {
+        const option = document.createElement('option');
+        option.value = variant;
+        option.textContent = variant;
+        varient?.current?.appendChild(option);
+      }
+
+      // Adding a default option
+      const defaultOption = document.createElement('option');
+      defaultOption.value = 'Default';
+      defaultOption.textContent = 'Default';
+      varient?.current?.appendChild(defaultOption);
+    });
+
+    varient?.current?.addEventListener('input', (event) => {
+      modelViewer.variantName = event.target.value === 'Default' ? null : event.target.value;
+    });
   }, []);
 
 
@@ -95,7 +127,7 @@ const ModelViewer = ({ item }) => {
             </button>
           </>
         )}
-
+        
         <button className="annotate-btn" onClick={() => setAnnotate((prevState) => !prevState)}>
           i
         </button>
@@ -115,9 +147,13 @@ const ModelViewer = ({ item }) => {
             <div class="HotspotAnnotation">{annotate.title}</div>
           </button>
         ))}
-
+        
+        <div class="controls variant_div">
+          <select ref={varient} id="variant"></select>
+        </div>
 
       </model-viewer>
+        
       <LazyLoad>
         {/* Card content below the model-viewer */}
         <div className="qr-sec">

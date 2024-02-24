@@ -189,6 +189,19 @@
   line-height: 0;
 }
 
+.variant_div select{
+  top:18px;
+  position: absolute;
+  right: 3.3rem;
+  color: rgb(82, 78, 78);
+  background: #e8eaed;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+
 .annotate-btn {
   background-color: rgba(0, 0, 0, 0.284);
   border-radius: 100%;
