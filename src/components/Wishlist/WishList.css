@@ -1,0 +1,101 @@
+
+
+
+   .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .cart-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .cart-paper {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  .wishlist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .wishlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wishlist-details {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .wishlist-name {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .wishlist-category 
+  {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .wishlist-color {
+    color: #777;
+  }
+  
+  .remove-btn {
+    background-color: #a10d0d;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-btn:hover {
+    background-color: #ff4646;
+  }
+  
+  .go-back {
+    display: block;
+    text-align: center;
+    background-color:hsl(288, 100%, 64%) ;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .go-back:hover {
+    background-color: hsl(276, 100%, 64%);
+  }
+  
+
+
+  

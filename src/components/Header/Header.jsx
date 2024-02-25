@@ -5,6 +5,7 @@ import "./styles.css";
 const Header = () => {
   const navigationLinks = [
     { label: "Home", Path: "/" },
+    { label:"WishList" ,Path:"/wishlist"},
     { label: "About", Path: "/about" },
     { label: "Feedback", Path: "/feedback" },
     { label: "Contact", Path: "/contact" },
