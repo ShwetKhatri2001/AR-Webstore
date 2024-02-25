@@ -111,6 +111,26 @@ No no! Don't worry about some top of the world words mentioned above, the projec
     ```
 
 This will install the app dependencies, start an instance of webpack-dev-server, and expose the local web server to the internet using the local tunnel URL will be printed on your terminal.
+
+<a name="docker"></a>
+## 🧰 Docker-Setup
+
+1. Get the docker 
+   For Windows/WSL use this : (https://docs.docker.com/desktop/install/windows-install/)
+   For Mac use this: (https://docs.docker.com/desktop/install/mac-install/)
+
+2. Check whether docker has been installed or not using 
+    `docker -v`
+
+3. Pull the Image of  #AR-webstore from dockerhub
+    `docker pull shwetkhatri2001/ar-webstore`
+4. List the images that are present currently 
+    `docker images`
+5. Run the docker image of #AR-webstore 
+    `docker run -p 3000:3000 shwetkhatri2001/ar-webstore`
+
+You will get the react-app running on `http://localhost:3000/`
+
 <a name="build"></a>
 ## 🧰 Build
 
@@ -131,13 +151,26 @@ For development and debugging, attach the device to your machine using a cable a
 
 <br>
 
-<div align="center">
+<div align="left">
   <picture>
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/GirlScriptSummerOfCode/MentorshipProgram/master/GSsoc%20Type%20Logo%20Black.png">
     <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
-    <img alt="Girlscript Summer of Code" width=80% src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
+    <img alt="Girlscript Summer of Code" width=500 src="https://user-images.githubusercontent.com/63473496/213306279-338f7ce9-9a9f-4427-8c2a-3e344874498f.png">
   </picture>
 </div>
+
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/32c23460-579d-4158-b1c5-aaae3b53cba7" width="500" />
+<br/>
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/cafaa1b8-4f6e-40a4-bf19-371e173faf63" width="400" />
+<br/>
+<br/>
+<img src="https://github.com/ShwetKhatri2001/Swetify-Music/assets/56475750/fcfa9ffe-7d51-4ad8-89e0-ae38589a710e" width="250" />
+<br/>
+<br/>
 
 <a name="project-admin"></a>
 ## Project Admin

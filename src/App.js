@@ -1,6 +1,6 @@
 import "./App.css";
 import "@google/model-viewer/dist/model-viewer.min.js";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import ProductList from "./components/ProductList/ProductList";
 import About from "./components/About/About";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
@@ -10,6 +10,7 @@ import Header from "./components/Header/Header";
 import Feedback from "./components/Feedback/Feedback";
 import WishList from "./components/Wishlist/WishList";
 import { useState } from "react";
+
 const App = () => {
   const [wishlist, setWishlist] = useState([]);
 
@@ -21,8 +22,10 @@ const App = () => {
     setWishlist(updatedWishlist);
   };
   return (
+    <>
     <BrowserRouter>
-      <Header />
+
+    <Header />
       <Routes>
         <Route path="/" element={<ProductList addToWishlist={addToWishlist} wishlist={wishlist} removeFromWishlist={handleRemoveItem}/>} />
         <Route path="/about" element={<About />} />
@@ -33,7 +36,9 @@ const App = () => {
 
       </Routes>
       <Footer />
-    </BrowserRouter>
+  </BrowserRouter>
+
+      </>
   );
 };
 

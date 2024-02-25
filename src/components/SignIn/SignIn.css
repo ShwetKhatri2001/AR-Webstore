@@ -1,0 +1,113 @@
+
+.main-sign_in_container{
+    height: 90vh;
+    width: 100%;
+}
+.sign-in-container{
+    position: relative;
+    width: 100vh;
+    height: auto;
+    max-width: 340px;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.sign-in-container h3{
+    margin: 2rem;
+    font-size: x-large;
+}
+.sign-in-container .input-div {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    line-height: 14px;
+    
+}
+.sign-in-container .input-div input{
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    outline: none;
+    border: 1px solid rgb(208, 205, 205);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    
+}
+input[type="password"]{
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    outline: none;
+    border: 1px solid rgb(208, 205, 205);
+    border-radius: 4px;
+}
+
+.sign-in-container .input-div label{
+    font-size: small;
+    
+}
+.sign-in-container .input-div input:focus{
+    border: 1px solid bisque;
+    transition: all 300ms ease;
+}
+.sign-in-button {
+    padding: 8px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: medium;
+    border-radius: 4px;
+    color: white;
+    background: black;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(124, 120, 120, 0.19);
+}
+.sign-in-button:hover {
+    
+    background: black;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(124, 120, 120, 0.19);
+}
+.sign-in-redirect-p{
+font-size: small;
+width: 100%;
+text-align: start;
+}
+.sign-in-redirect-p a{
+   text-decoration: none;
+   color: black;
+}
+.sign-in-redirect-p a:hover{
+    text-decoration: underline;
+    color: rgb(65, 103, 220);
+ }
+.error-paragraph{
+    position: absolute;
+    top: 0;
+    font-size: small;
+    color: red;
+
+}
+.forgot-pass {
+    font-size: small;
+    margin: 0.2rem;
+    text-decoration: none;
+    color: black;
+}
+.forgot-pass:hover {
+    color: rgb(65, 103, 220);
+    text-decoration: underline;
+}
+   
+
+    

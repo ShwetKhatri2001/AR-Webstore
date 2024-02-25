@@ -8,10 +8,18 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
   const [isInWishlist, setIsInWishlist] = useState(false);
 
   const model = useRef();
+
   function toggle() {
     if (!document.fullscreenElement) {
       model.current.requestFullscreen();
     } else if (document.exitFullscreen) document.exitFullscreen();
+  }
+
+
+  const handleAnnotateClick = (annotation) => {
+    const { orbit, target, position } = annotation;
+    model.current.cameraTarget = position;
+    model.current.orbit = target
   }
 
   useEffect(() => {
@@ -27,7 +35,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
       setARSupported(true);
     }
   }, []);
-
   // Check if the item is already in the wishlist
   useEffect(() => {
     if(wishlist){
@@ -45,6 +52,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
     borderRadius: 15,
   };
 
+
   const handleAddToWishlist = () => {
     if (isInWishlist) {
       removeFromWishlist(item.id);
@@ -57,24 +65,28 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
   return (
     <div className="model-view">
       <model-viewer
+        key={item.id}
         ref={model}
         style={modelViewer1}
         src={item.modelSrc}
         ios-src={item.iOSSrc}
         alt="A 3D model"
         ar
-        auto-rotate
+        ar-modes="webxr scene-viewer quick-look"
         camera-controls
+        auto-rotate
+
       >
+
         {ARSupported && (
           <button slot="ar-button" className="arbutton">
             View in your space
           </button>
         )}
+
         <button className="fullscreen-btn" onClick={toggle}>
           &#x26F6;<span>full screen</span>
         </button>
-
         {display ? (
           <>
             <button
@@ -86,9 +98,11 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
             <Help />
           </>
         ) : (
-          <button className="help-btn" onClick={() => setDisplay(true)}>
-            ?<span>help</span>
-          </button>
+          <>
+            <button className="help-btn" onClick={() => setDisplay(true)}>
+              ?<span>help</span>
+            </button>
+          </>
         )}
       </model-viewer>
       <LazyLoad>
@@ -104,7 +118,6 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
               includeMargin
             />
           )}
-
           <div className="product-details">
             <div>
               <div className="pname">{item.name}</div>
@@ -124,6 +137,7 @@ const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
             <button className="add-icon" onClick={handleAddToWishlist}>
               {isInWishlist ? '-' : '+'}
             </button>
+
           </div>
         </div>
       </LazyLoad>
