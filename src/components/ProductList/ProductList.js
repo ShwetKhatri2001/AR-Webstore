@@ -6,6 +6,7 @@ import LazyLoad from "react-lazyload";
 const ProductList = ({ addToWishlist,wishlist,removeFromWishlist }) => {
 
   return (
+    <section>
       {productItems.map((item) => (
         <LazyLoad key={item.id}>
           <ModelViewer item={item} addToWishlist={addToWishlist} wishlist={wishlist} removeFromWishlist={removeFromWishlist} />
