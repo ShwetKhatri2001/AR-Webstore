@@ -3,12 +3,12 @@ import LazyLoad from "react-lazyload";
 // import "../../Products/ProductList.css";
 import QRCode from "qrcode.react";
 import Help from "./Help";
-const ModelViewer = ({ item }) => {
+const ModelViewer = ({ item, addToWishlist, removeFromWishlist, wishlist }) => {
   const [selectedVariant, setSelectedVariant] = useState('default');
   const [display, setDisplay] = useState(false);
   const [ARSupported, setARSupported] = useState(false);
   const [annotate, setAnnotate] = useState(false);
-
+  const [isInWishlist, setIsInWishlist] = useState(false);
   
   
   let modelViewer1 = {
@@ -82,8 +82,22 @@ const ModelViewer = ({ item }) => {
       modelViewer.variantName = event.target.value === 'Default' ? null : event.target.value;
     });
   }, []);
-
-
+   
+  useEffect(() => {
+    if(wishlist){
+    const isInWishlist = wishlist.some((wishlistItem) => wishlistItem.id === item.id);
+    setIsInWishlist(isInWishlist);
+    }
+  }, [item, wishlist]);
+  const handleAddToWishlist = () => {
+    if (isInWishlist) {
+      removeFromWishlist(item.id);
+    } 
+    else 
+    {
+      addToWishlist(item);
+    }
+  };
 
   return (
     <div className="model-view">
@@ -185,7 +199,9 @@ const ModelViewer = ({ item }) => {
               <div>Rs. 1000</div>
               {!ARSupported && <h5>Scan the QR code for AR View on mobile</h5>}
             </div>
-            <div className="add-icon">+</div>
+            <button className="add-icon" onClick={handleAddToWishlist}>
+              {isInWishlist ? '-' : '+'}
+            </button>
           </div>
         </div>
       </LazyLoad>
