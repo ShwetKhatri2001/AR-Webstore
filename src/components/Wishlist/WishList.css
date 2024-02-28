@@ -1,54 +1,51 @@
 .container {
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
   }
   
   .cart-title {
-    text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
-
+    text-align: center;
   }
   
   .cart-paper {
-    background-color: #f9f9f9;
-    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 20px;
   }
   
   .cart-heading {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
-
   }
   
   .wishlist-items {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    max-height: 600px; 
-  overflow-y: auto;
+    gap: 1rem;
+    max-height: 600px;
+    overflow-y: auto;
   }
   
   .wishlist-item {
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
     padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
   .wishlist-details {
     display: flex;
     flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
   }
   
   .wishlist-name {
@@ -83,7 +80,6 @@
   .go-back {
     display: block;
     text-align: center;
-    background-color:hsl(288, 100%, 64%) ;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -92,5 +88,4 @@
   }
   
   .go-back:hover {
-    background-color: hsl(276, 100%, 64%);
   }
