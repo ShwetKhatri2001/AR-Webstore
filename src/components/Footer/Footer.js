@@ -63,7 +63,7 @@ function Footer() {
         </form>
       </div>
       <div class="last">
-        <p>@ 2023 AR-Website | All Rights Reserved</p>
+        <p>@ {new Date().getFullYear()} AR-Website | All Rights Reserved</p>
       </div>
     </div>
   );
