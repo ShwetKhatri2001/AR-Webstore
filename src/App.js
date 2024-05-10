@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Feedback from "./components/Feedback/Feedback";
 import SignUp from "./components/SignUp/SignUp";
-import SignIn from './components/SignIn/Signin'
+import SignIn from "./components/SignIn/Signin";
 import WishList from "./components/Wishlist/WishList";
 import { useState } from "react";
 
@@ -25,23 +25,35 @@ const App = () => {
   };
   return (
     <>
-    <BrowserRouter>
-
-    <Header />
-      <Routes>
-        <Route path="/" element={<ProductList addToWishlist={addToWishlist} wishlist={wishlist} removeFromWishlist={handleRemoveItem}/>} />
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/wishlist" element={<WishList wishlist={wishlist} onRemoveItem={handleRemoveItem}/>}/>
-        <Route path="/about" element={<About />} />
-        <Route path="/feedback" element={<Feedback />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      <Footer />
-  </BrowserRouter>
-
-      </>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProductList
+                addToWishlist={addToWishlist}
+                wishlist={wishlist}
+                removeFromWishlist={handleRemoveItem}
+              />
+            }
+          />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route
+            path="/wishlist"
+            element={
+              <WishList wishlist={wishlist} onRemoveItem={handleRemoveItem} />
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 };
 
